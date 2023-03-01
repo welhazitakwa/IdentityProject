@@ -25,4 +25,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     if File.exists? afterScriptPath then
         config.vm.provision "shell", path: afterScriptPath
     end
+
+    config.vm.provider :virtualbox do |vb|
+        vb.gui = true
+    end
+    #config.vm.network :public_network, ip: "192.168.1.27"
+
 end

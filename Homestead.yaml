@@ -5,11 +5,11 @@ cpus: 1
 provider: virtualbox
 
 folders:
-    - map: .
+    - map: c:/Users/Fatma Ouelhazi/my_project
       to: /home/vagrant/Code
 
 sites:
-    - map: homestead.test
+    - map: IdentityMedical.test
       to: /home/vagrant/Code/Project/public
 
 databases:
