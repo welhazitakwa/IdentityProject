@@ -173,7 +173,7 @@
                         <a href="/abonnement/list"><i class="feather-calendar"></i> <span>Abonnements</span></a>
                      </li>
                      <li>
-                        <a href="/specialities/list"><i class="feather-package"></i> <span>Specialities</span></a>
+                        <a href="/specialite/list"><i class="feather-package"></i> <span>Specialities</span></a>
                      </li>
                      <li>
                         <a href="/cadres/list"><i class="feather-user-plus"></i> <span>Doctors</span></a>
