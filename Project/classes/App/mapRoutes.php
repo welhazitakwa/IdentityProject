@@ -8,6 +8,7 @@ class mapRoutes implements \AIFrame\Routes {
 	private $categoriesTable;	
 	private $produitsTable;	
 	private $abonnementsTable;	
+	private $specialitesTable;
 	
 	
 		
@@ -23,6 +24,7 @@ class mapRoutes implements \AIFrame\Routes {
 		$this->categoriesTable = new \AIFrame\DatabaseTable($pdo, 'categories', 'id');
 		$this->produitsTable = new \AIFrame\DatabaseTable($pdo, 'produits', 'id');
 		$this->abonnementsTable = new \AIFrame\DatabaseTable($pdo, 'abonnements', 'id');
+		$this->specialitesTable = new \AIFrame\DatabaseTable($pdo, 'specialites', 'id');
 	
 	
 	}
@@ -36,6 +38,7 @@ class mapRoutes implements \AIFrame\Routes {
 		$categorieController = new \App\Controllers\categorie($this->categoriesTable,$this->utilisateursTable,$this->authentication);
 		$produitController = new \App\Controllers\produit($this->produitsTable,$this->utilisateursTable,$this->authentication);
 	    $abonnementController = new \App\Controllers\abonnement($this->abonnementsTable,$this->utilisateursTable,$this->authentication);
+		$specialiteController = new \App\Controllers\specialite($this->specialitesTable,$this->utilisateursTable,$this->authentication);
 		
 		$routes = [
 		// Home
@@ -214,6 +217,35 @@ class mapRoutes implements \AIFrame\Routes {
 			'abonnement/delete' => [
 				'GET' => [
 					'controller' => $abonnementController,
+					'action' => 'delete'
+				],
+				'login' => true
+			],
+
+
+			//specialite
+			'specialite/list' => [
+				'GET' => [
+					'controller' => $specialiteController,
+					'action' => 'list'
+				],
+				'login' => true
+			],
+			'specialite/edit' => [
+				'POST' => [
+					'controller' => $specialiteController,
+					'action' => 'saveEdit'
+				],
+				'GET' => [
+					'controller' => $specialiteController,
+					'action' => 'edit'
+				],
+				'login' => true
+			],
+
+			'specialite/delete' => [
+				'GET' => [
+					'controller' => $specialiteController,
 					'action' => 'delete'
 				],
 				'login' => true
