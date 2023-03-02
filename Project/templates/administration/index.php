@@ -13,6 +13,7 @@
       <link rel="stylesheet" href="/back/plugins/select2/css/select2.min.css">
       <link rel="stylesheet" href="/back/plugins/owl-carousel/owl.carousel.min.css">
       <link rel="stylesheet" href="/back/plugins/daterangepicker/daterangepicker.css">
+      <link rel="stylesheet" href="/back/plugins/datatables/datatables.min.css">
       <link rel="stylesheet" href="/back/css/style.css">
    </head>
    <body>
@@ -313,6 +314,9 @@
       <script src="/back/plugins/apexchart/chart-data.js"></script>
       <script src="/back/js/moment.min.js"></script>
       <script src="/back/plugins/daterangepicker/daterangepicker.js"></script>
+      <script src="/back/plugins/datatables/jquery.dataTables.min.js"></script>
+      <script src="/back/plugins/datatables/datatables.min.js"></script>
       <script src="/back/js/script.js"></script>
+      
    </body>
   </html>
