@@ -97,6 +97,17 @@ class mapRoutes implements \AIFrame\Routes {
 				],
 				'login' => true
 			],
+			'editprofil' => [
+				'POST' => [
+					'controller' => $utilisateurController,
+					'action' => 'saveEdit'
+				],
+				'GET' => [
+					'controller' => $utilisateurController,
+					'action' => 'editprofil'
+				],
+				'login' => true
+			],
 			'utilisateur/list' => [
 				'GET' => [
 					'controller' => $utilisateurController,

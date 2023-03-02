@@ -78,6 +78,49 @@ class Register {
 				];
 	}
 
+	public function edit(){
+		
+		if (isset($_GET['id'])){
+			$utilisateur = $this->utilisateursTable->findById($_GET['id']);
+		}
+		
+		$user = $this->authentication->getUser();
+		$title = 'Traitement :: edit';
+		return ['template' => 'back/editprofile.html.php',
+				'title' => $title,
+				'variables' => [
+					'utilisateur' => $utilisateur ?? null,
+					'user' => $user
+					]
+				];
+	}
+	public function editprofil(){
+		
+		if (isset($_GET['id'])){
+			$utilisateur = $this->utilisateursTable->findById($_GET['id']);
+		}
+		
+		$user = $this->authentication->getUser();
+		$title = 'Traitement :: edit';
+		return ['template' => 'back/editprofile.html.php',
+				'title' => $title,
+				'variables' => [
+					'utilisateur' => $utilisateur ?? null,
+					'user' => $user
+					]
+				];
+	}
+
+
+//--------Enregistrement de données---------//
+
+	public function saveEdit(){
+		
+		$utilisateur = $_POST['utilisateur'];
+		$this->utilisateursTable->save($utilisateur);
+		header('location: /editprofil?id='.$_GET['id'].'&msg=1');
+	}
+
 	// public function permissions() {
 
 		// $utilisateur = $this->utilisateursTable->findById($_GET['id']);
