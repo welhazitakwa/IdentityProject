@@ -80,11 +80,7 @@
                                     <td><?=$specialite->id?></td>
                                           
                                         
-                                          <td>
-                                          <h2 class="table-avatar">
-                                             <img src="/back/img/<?=$specialite->image?>" class="img-fluid">
-                                             <span><?=$specialite->nom?></span>
-                                          </h2>
+                                          <td><img src='/img_spc/<?=$specialite->image?>' height='100' width='100' >
                                        </td>
                                           
                                           <td> 
