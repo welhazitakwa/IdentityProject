@@ -49,6 +49,17 @@ class abonnement{
 		header('location: /abonnement/list');
 	}
 
+
+
+		public function publier(){
+		
+		$abonnement['id'] = $_GET['id'];
+		$abonnement['etat'] = $_GET['etat'];
+		
+		$this->abonnementsTable->save($abonnement);
+		header('location: /abonnement/list');
+	}
+
 //--------Affichage de données---------//
 
 	public function list(){
