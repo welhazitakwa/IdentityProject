@@ -233,6 +233,14 @@ class mapRoutes implements \AIFrame\Routes {
 				'login' => true
 			],
 
+			'abonnement/publier' => [
+				'GET' => [
+					'controller' => $abonnementController,
+					'action' => 'publier'
+				],
+				'login' => true
+			],
+
 
 			//specialite
 			'specialite/list' => [
