@@ -64,6 +64,7 @@
                                           <th>Avantages</th>
                                           <th>Prix</th>
                                           <th>Durée</th>
+                                          <th>Etat</th>
                                           <th>Action</th>
                                           
                                     </tr>
@@ -78,9 +79,23 @@
                                           <td><?=$abonnement->avantages?></td>
                                           <td><?=$abonnement->prix?></td>
                                           <td><?=$abonnement->duree?></td>
+                                          <td><?=$abonnement->etat?></td>
                                           
                                           <td> 
+
+
+
                                               <div class="actions">
+                                                <?php if ($abonnement->etat==0){ ?>
+                                                <a href="/abonnement/publier?id=<?=$abonnement->id?>&etat=1" class="text-black"><i class="feather-edit-3 me-1"></i>Publier</a>
+                                                <?php } else { ?>
+                                                <a href="/abonnement/publier?id=<?=$abonnement->id?>&etat=0" class="text-danger"><i class="feather-edit-3 me-1"></i>Depublier</a>
+                                                <?php }?>
+
+
+
+
+
                                                   <a href="/abonnement/edit?id=<?=$abonnement->id?>" class="text-black"><i class="feather-edit-3 me-1"></i>Modifier</a>
                                                   <a href="/abonnement/delete?id=<?=$abonnement->id?>" onClick="return(confirm('Voulez-vous sur supprimer cette abonnements?'))" class="text-danger"><i class="feather-trash-2 me-1"></i>Supprimer</a>
                                               </div>
