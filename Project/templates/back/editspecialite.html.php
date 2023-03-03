@@ -20,11 +20,13 @@
 
 
                <div class="form-group row">
-                <label class="col-lg-3 col-form-label" for="val-suggestions">Image <span class="text-danger">*</span></label>
-                <div class="col-lg-6">
-                <input type="file" class="form-control" id="fileToUpload" name="specialite[image]" value="<?=$specialite->image ?? ''?>" placeholder="Enter nom de specialite" required />
-            </div>
-         </div>
+                                        <label class="col-lg-3 col-form-label" for="val-suggestions">Image <span class="text-danger">*</span></label>
+                                        <div class="col-lg-6">
+                                            <input type="file" class="form-control" id="fileToUpload" name="fileToUpload"
+                                            accept="image/gif, image/jpeg, image/jpg, image/png"
+                                            />
+                                        </div>
+                                    </div>
               
               
               
