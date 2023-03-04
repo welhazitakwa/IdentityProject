@@ -135,14 +135,14 @@
                <li class="nav-item dropdown main-drop">
                   <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
                   <span class="user-img">
-                  <img src="/back/img/profiles/avatar-01.jpg" alt="">
+                  <img src='/img_utilisateurs/<?=$user->avatar?>' alt="">
                   <span class="status online"></span>
                   </span>
                   </a>
                   <div class="dropdown-menu">
                      <div class="user-header">
                         <div class="avatar avatar-sm">
-                           <img src="/back/img/profiles/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle">
+                           <img src='/img_utilisateurs/<?=$user->avatar?>' alt="User Image" class="avatar-img rounded-circle">
                         </div>
                         <div class="user-text">
                            <h6> <?= $user-> nom?> <?=$user-> prenom?> </h6>

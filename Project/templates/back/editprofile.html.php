@@ -31,21 +31,17 @@
 
 
                   <div class="profile-detail" style="margin-right: 3em;">
-                  <label style="margin-left: 3em;margin-right: 53px;" class="avatar profile-cover-avatar">  
-                  <img    class="avatar-img" src='/img_utilisateurs/<?=$utilisateur->avatar?>' alt="Profile Image">
+                  <label>  </label> 
+                  <img   class="avatar  avatar-img profile-cover-avatar" style="margin-left:25px;" src='/img_utilisateurs/<?=$utilisateur->avatar?>' alt="Profile Image">
 
 
-
-                   </label>
-
-
-                  <div class="upload-img">
-                     <div class="change-photo-btn">
+                  <div class="upload-img" style="margin-left:75px;">
+                     <div class="change-photo-btn" >
                         <span><i class="fa fa-upload"></i> Upload Photo</span>
-                           <input type="file" class="upload" id="fileToUpload" name="fileToUpload"
+                           <input  type="file" class="upload" id="fileToUpload" name="fileToUpload" value="<?=$utilisateur->avatar ?? ''?>" 
                            accept="image/gif, image/jpeg, image/jpg, image/png" />
                      </div>
-                     <small class="form-text text-muted">Allowed JPG, GIF or PNG. Max size of 2MB</small>
+                     <small class="form-text text-muted">Autorisé JPG, GIF, JPEG, PNG, Max 2MB</small>
                   </div>
 
 
