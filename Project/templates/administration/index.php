@@ -15,6 +15,7 @@
       <link rel="stylesheet" href="/back/plugins/daterangepicker/daterangepicker.css">
       <link rel="stylesheet" href="/back/plugins/datatables/datatables.min.css">
       <link rel="stylesheet" href="/back/css/style.css">
+
    </head>
    <body>
       <div class="main-wrapper">
@@ -317,6 +318,9 @@
       <script src="/back/plugins/datatables/jquery.dataTables.min.js"></script>
       <script src="/back/plugins/datatables/datatables.min.js"></script>
       <script src="/back/js/script.js"></script>
+      <script src="/back/js/form-validation.js"></script>
+
+
       
    </body>
   </html>
