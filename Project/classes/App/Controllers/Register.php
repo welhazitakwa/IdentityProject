@@ -131,7 +131,7 @@ class Register {
 		move_uploaded_file($file_loc,$target_file); // mv tmpfile dossier/nexnamefile
 			$utilisateur = $_POST['utilisateur'];
 		$utilisateur['avatar']=$final_file;
-			$utilisateur = $_POST['utilisateur'];
+		//$utilisateur = $_POST['utilisateur'];
 		$this->utilisateursTable->save($utilisateur);
 		header('location: /editprofil?id='.$_GET['id'].'&msg=1');
 
