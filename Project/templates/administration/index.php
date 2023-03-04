@@ -149,7 +149,7 @@
                            <p class="text-muted mb-0">Administrator</p>
                         </div>
                      </div>
-                     <a class="dropdown-item" href="profile.html"><i class="feather-user me-1"></i> My Profile</a>
+                     <a class="dropdown-item" href="/profil"><i class="feather-user me-1"></i> Mon profil</a>
                      <a class="dropdown-item" href ="/editprofil?id=<?=$user->id;?>"><i class="feather-edit me-1"></i> Edit Profile</a>
                      <a class="dropdown-item" href="account-settings.html"><i class="feather-sliders me-1"></i> Account Settings</a>
                      <hr class="my-0 ms-2 me-2">
@@ -170,7 +170,7 @@
                         <a href="/categorie/list"><i class="feather-calendar"></i> <span>Categories</span></a>
                      </li>
                      <li>
-                        <a href="/abonnement/list"><i class="feather-calendar"></i> <span>Abonnements</span></a>
+                        <a href="/abonnement/list"><i class="feather-dollar-sign"></i> <span>Abonnements</span></a>
                      </li>
                      <li>
                         <a href="/specialite/list"><i class="feather-package"></i> <span>Specialities</span></a>
@@ -199,7 +199,7 @@
                            <li><a href="user-reports.html">Users Report</a></li>
                         </ul>
                      </li>
-                     <li class="menu-title">
+                    <!-- <li class="menu-title">
                         <span>Pharmacy</span>
                      </li>
                      <li class="submenu">
@@ -218,7 +218,7 @@
                      </li>
                      <li class="menu-title">
                         <span>Blog</span>
-                     </li>
+                     </li>-->
                      <li class="submenu">
                         <a href="#"><i class="feather-grid"></i> <span> Blog</span> <span class="menu-arrow"></span></a>
                         <ul>
@@ -228,7 +228,7 @@
                            <li><a href="edit-blog.html">Edit Blog</a></li>
                         </ul>
                      </li>
-                     <li class="menu-title">
+                    <!-- <li class="menu-title">
                         <span>Pages</span>
                      </li>
                      <li>
@@ -298,7 +298,7 @@
                               <a href="javascript:void(0);"> <span>Level 1</span></a>
                            </li>
                         </ul>
-                     </li>
+                     </li>-->
                   </ul>
                </div>
             </div>
