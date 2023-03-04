@@ -31,7 +31,7 @@
                                  </div>
                                  <div class="SortBy">
                                     <div class="selectBoxes order-by">
-                                       <p class="mb-0"><img src="assets/img/icon/sort.png" class="me-2" alt="icon"> Order by </p>
+                                       <p class="mb-0"><img src="/back/img/icon/sort.png" class="me-2" alt="icon"> Order by </p>
                                        <span class="down-icon"><i class="feather-chevron-down"></i></span>
                                     </div>
                                     <div id="checkBox">
@@ -80,9 +80,13 @@
                                     <td><?=$specialite->id?></td>
                                           
                                         
-                                          <td><img src='/img_spc/<?=$specialite->image?>' height='100' width='100' >
+                                          <td>
+                                             <h2 class="table-avatar">
+                                             <img src='/img_spc/<?=$specialite->image?>' class="spl-img"  >
+                                          <span><?=$specialite->nom?></span>
+                                              </h2>
                                        </td>
-                                          
+
                                           <td> 
                                               <div class="actions">
                                                   <a href="/specialite/edit?id=<?=$specialite->id?>" class="text-black"><i class="feather-edit-3 me-1"></i>Modifier</a>

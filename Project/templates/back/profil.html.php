@@ -83,6 +83,28 @@
                            </li>
                         </ul>
                      </div>
+
+                     <div class="col-md-6 mb-3">
+                        <?php
+ 
+  $legumes = array('Bizerte','Jandouba','Beja','Tunis');
+  ?>
+  <select>
+    <?php 
+$tailleLegumes = sizeof($legumes);
+ 
+  // Parcours du tableau
+  for($i=0; $i<$tailleLegumes; $i++)
+  {?>
+<option value="0"><?php echo $legumes[ $i ] ?></option> 
+ <?php 
+}
+    ?>
+                     </div>
+
+
+
+                     
                   </div>
                </div>
             </div>

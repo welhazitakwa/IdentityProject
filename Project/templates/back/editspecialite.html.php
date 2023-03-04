@@ -8,7 +8,7 @@
 <div class="content container-fluid">
    <div class="row">
       <div class="col-md-12">
-         <h5 class="mb-3">Add specialites</h5>
+         <h5 class="mb-3">Spécialités</h5>
          <div class="row">
             <div class="col-md-6">
                 <form class="form-validate" method='post' enctype="multipart/form-data">
@@ -36,7 +36,7 @@
                      <label class="focus-label">Video ID <span class="text-danger">*</span></label>
                   </div>
                </div>
-               <button type="submit" class="btn btn-primary save-btn">save</button>
+               <button type="submit" class="btn btn-primary save-btn">sauvegarder</button>
 </form>
             </div>
          </div>
