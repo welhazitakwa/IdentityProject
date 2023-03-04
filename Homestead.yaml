@@ -5,7 +5,7 @@ cpus: 1
 provider: virtualbox
 
 folders:
-    - map: c:/Users/HP/IdentityProject
+    - map: c:/Users/Fatma Ouelhazi/my_project
       to: /home/vagrant/Code
 
 sites:
