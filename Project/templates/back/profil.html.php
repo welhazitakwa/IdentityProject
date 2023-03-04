@@ -1,8 +1,8 @@
 <div class="page-wrapper">
    <div class="content container-fluid">
       <div class="row">
-         <div class="col-md-8 col-lg-8 col-xl-6">
-            <div class="profile-info">
+         <div class="col-md-12 col-lg-1 col-xl-11">
+            <div class="profile-info" style="margin-left=30em" >
                <h4>Mon profil</h4>
                <div class="profile-list">
                   <div class="profile-detail">
@@ -16,33 +16,37 @@
                   </div>
                   <div class="row">
                      <div class="col-md-12">
-                        <h6 class="pro-title">Informations personnelles</h6>
+                        <h4 style="color:#00dbfb" class="pro-title">Informations personnelles</h4>
                         <p></p>
                      </div>
                      <div class="col-md-4 mb-3">
-                        <h5>Date de naissance</h5>
+                        <strong><p style="color: black";>Date de naissance</p></strong>
                         <p><?= $user-> dateNaissance?></p>
                      </div>
                      <div class="col-md-4 mb-3">
-                        <h5>Genre</h5>
+                        <strong><p style="color: black";>Genre</p></strong>
                         <p></p>
                      </div>
                      <div class="col-md-4 mb-3">
-                        <h5>Age</h5>
+                        <strong><p style="color: black";>Age</p></strong>
                         <p></p>
                      </div>
                      <div class="col-md-12">
-                        <h6 class="pro-title">Adresse & Localisation</h6>
+                        <h4 style="color:#00dbfb" class="pro-title">Adresse & Localisation</h4>
                      </div>
-                     <div class="col-md-4">
-                        <h5>Adresse</h5>
+                     <div  class="col-md-4 mb-1">
+                        <strong><p style="color: black";> Gouvernorat </p></strong>
+                        <p></p>
+                     </div>
+                     
+                     <div  class="col-md-4 mb-3">
+                        <strong><p style="color: black";>Adresse</p></strong>
                         <p><?= $user-> adresse?></p>
                      </div>
-                     <div class="col-md-4">
-                        
-                     </div>
-                     <div class="col-md-4">
-                        <h5>Etat</h5>
+                     
+                     
+                     <div  class="col-md-4 mb-3">
+                        <strong><p style="color: black";> Code </p></strong>
                         <p></p>
                      </div>
                   </div>
@@ -51,20 +55,20 @@
                   <div class="row">
                      <div class="col-md-12">
                         <div class="pro-title d-flex justify-content-between">
-                           <h6>Information sur le compte</h6>
+                           <h4 style="color:#00dbfb">Information sur le compte</h4>
                            
                         </div>
                      </div>
                      <div class="col-md-6 mb-3">
-                        <h5>Email Adresse</h5>
+                        <strong><p style="color: black";>Adresse Email</p></strong>
                         <p><?= $user-> email?></p>
                      </div>
                      <div class="col-md-6 mb-3">
-                        <h5>Numéro de téléphone</h5>
+                        <strong><p style="color: black";>Numéro de téléphone</p></strong>
                         <p><?= $user-> tel?></p>
                      </div>
                      <div class="col-md-6">
-                        <h5>Liens sociaux</h5>
+                        <strong><p style="color: black";>Liens sociaux</p></strong>
                         <ul class="social-icon">
                            <li>
                               <a href="#"><i class="feather-twitter"></i></a>
@@ -85,21 +89,7 @@
                      </div>
 
                      <div class="col-md-6 mb-3">
-                        <?php
  
-  $legumes = array('Bizerte','Jandouba','Beja','Tunis');
-  ?>
-  <select>
-    <?php 
-$tailleLegumes = sizeof($legumes);
- 
-  // Parcours du tableau
-  for($i=0; $i<$tailleLegumes; $i++)
-  {?>
-<option value="0"><?php echo $legumes[ $i ] ?></option> 
- <?php 
-}
-    ?>
                      </div>
 
 

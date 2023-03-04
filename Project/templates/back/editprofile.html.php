@@ -62,13 +62,13 @@
 
 
                      <div class="form-group row">
-                        <label style="color:#00c7e3" class="col-lg-2 col-form-label">  <B>Nom</B></label>
+                        <label style="color:#00dbfb" class="col-lg-2 col-form-label">  <B>Nom</B></label>
                         <div class="col-lg-4">
                            <input type="text" class="form-control" name="utilisateur[nom]" value="<?=$utilisateur->nom ?? ''?>">
                            <small class="form-text text-muted">Nom de l'utilisateur</small>
                         </div>
 
-                        <label style="color:#00c7e3" class="col-lg-2 col-form-label"><B>Prenom</B></label>
+                        <label style="color:#00dbfb" class="col-lg-2 col-form-label"><B>Prenom</B></label>
                         <div class="col-lg-4">
                            <input type="text" class="form-control" name="utilisateur[prenom]" value="<?=$utilisateur->prenom ?? ''?>">
                            <small class="form-text text-muted">Prenom de l'utilisateur</small>
@@ -80,20 +80,59 @@
 
 
                      <div class="form-group row">
-                        <label style="color:#00c7e3" class="col-lg-2 col-form-label">  <B>Email</B></label>
+                        <label style="color:#00dbfb" class="col-lg-2 col-form-label">  <B>Email</B></label>
                         <div class="col-lg-4">
                            <input type="email" class="form-control" name="utilisateur[email]" value="<?=$utilisateur->email ?? ''?>">
                            <small class="form-text text-muted">Email de l'utilisateur</small>
                         </div>
 
-                        <label style="color:#00c7e3" class="col-lg-2 col-form-label"><B>Login</B></label>
+                        <label style="color:#00dbfb" class="col-lg-2 col-form-label"><B>Login</B></label>
                         <div class="col-lg-4">
                            <input type="text" class="form-control" name="utilisateur[login]" value="<?=$utilisateur->login ?? ''?>">
                            <small class="form-text text-muted">Login de l'utilisateur</small>
                         </div>
                      </div>
 
+  <!--
+   <select>
+   
+    
+  -->
 
+                     
+
+                     <div class="form-group row">
+                        <label style="color:#00dbfb" class="col-lg-2 col-form-label">  <B>Gouvernorat</B></label>
+                        <div class="col-lg-4">
+
+
+
+
+
+                        
+                                                  <?php
+ 
+                        $gouvernorats = array('Ariana','Béja','Ben Arous','Bizerte','Gabès',
+                        'Gafsa','Jendouba','Kairouan', 'Kasserine','Kébili','Le Kef',
+                        'Mahdia','La Manouba	','Médenine','Monastir','Nabeul','Sfax','Sidi Bouzid',
+                        'Siliana','Sousse','Tataouine','Tozeur','Tunis'	,'Zaghouan');
+                        ?>
+                        <select name="utilisateur[gouvernorat]" style=" width: 350px; height:3em;" >
+                           <?php 
+                           $taillegouvernorats = sizeof($gouvernorats);
+                            for($i=0; $i<$taillegouvernorats; $i++) { ?>
+                           
+                                 <option value="<?=$gouvernorats[ $i ] ?? ''?>" style="height:1000000px;"  ><?php echo $gouvernorats[ $i ] ?></option> 
+                                 <?php } ?>
+                           </select>
+                             </div>
+
+                        <label style="color:#00dbfb" class="col-lg-2 col-form-label"><B>Adresse</B></label>
+                        <div class="col-lg-4">
+                           <input type="text" class="form-control" name="utilisateur[gouvernorat]" value="<?=$utilisateur->adresse ?? ''?>">
+                           <small class="form-text text-muted">Adresse</small>
+                        </div>
+                     </div>
 
 
 
@@ -115,7 +154,7 @@
                         </div>
                      </div>
                      <div class="form-group row">
-                        <label style="color:#00c7e3" class="col-lg-2 col-form-label"><B>Adresse</B></label>
+                        <label style="color:#00dbfb" class="col-lg-2 col-form-label"><B>Adresse</B></label>
                         <div class="col-lg-6">
                            <input type="text" class="form-control" name="utilisateur[adresse]" value="<?=$utilisateur->adresse ?? ''?>">
                            <small class="form-text text-muted">Adresse de l'utilisateur</small>
