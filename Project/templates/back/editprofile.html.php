@@ -43,17 +43,9 @@
                      </div>
                      <small class="form-text text-muted">Autorisé JPG, GIF, JPEG, PNG, Max 2MB</small>
                   </div>
-
-
-
-
-
-
-               
-               
-             
-                  
                    </div>
+
+                   
 
 
 
@@ -62,13 +54,13 @@
 
 
                      <div class="form-group row">
-                        <label style="color:#00c7e3" class="col-lg-2 col-form-label">  <B>Nom</B></label>
+                        <label style="color:#00dbfb" class="col-lg-2 col-form-label">  <B>Nom</B></label>
                         <div class="col-lg-4">
                            <input type="text" class="form-control" name="utilisateur[nom]" value="<?=$utilisateur->nom ?? ''?>">
                            <small class="form-text text-muted">Nom de l'utilisateur</small>
                         </div>
 
-                        <label style="color:#00c7e3" class="col-lg-2 col-form-label"><B>Prenom</B></label>
+                        <label style="color:#00dbfb" class="col-lg-2 col-form-label"><B>Prenom</B></label>
                         <div class="col-lg-4">
                            <input type="text" class="form-control" name="utilisateur[prenom]" value="<?=$utilisateur->prenom ?? ''?>">
                            <small class="form-text text-muted">Prenom de l'utilisateur</small>
@@ -80,55 +72,129 @@
 
 
                      <div class="form-group row">
-                        <label style="color:#00c7e3" class="col-lg-2 col-form-label">  <B>Email</B></label>
+                        <label style="color:#00dbfb" class="col-lg-2 col-form-label">  <B>Email</B></label>
                         <div class="col-lg-4">
                            <input type="email" class="form-control" name="utilisateur[email]" value="<?=$utilisateur->email ?? ''?>">
                            <small class="form-text text-muted">Email de l'utilisateur</small>
                         </div>
 
-                        <label style="color:#00c7e3" class="col-lg-2 col-form-label"><B>Login</B></label>
+                        <label style="color:#00dbfb" class="col-lg-2 col-form-label"><B>Login</B></label>
                         <div class="col-lg-4">
                            <input type="text" class="form-control" name="utilisateur[login]" value="<?=$utilisateur->login ?? ''?>">
                            <small class="form-text text-muted">Login de l'utilisateur</small>
                         </div>
                      </div>
 
+  <!--
+   <select>
+   
+    
+  -->
 
+                     
+
+                     <div class="form-group row">
+                        <label style="color:#00dbfb" class="col-lg-2 col-form-label">  <B>Gouvernorat</B></label>
+                        <div class="col-lg-4">
+
+
+
+
+
+                        
+                                                  <?php
+ 
+                        $options = array('Ariana','Béja','Ben Arous','Bizerte','Gabès',
+                        'Gafsa','Jendouba','Kairouan', 'Kasserine','Kébili','Le Kef',
+                        'Mahdia','La Manouba	','Médenine','Monastir','Nabeul','Sfax','Sidi Bouzid',
+                        'Siliana','Sousse','Tataouine','Tozeur','Tunis'	,'Zaghouan');
+                        ?>
+
+
+
+
+
+
+
+
+
+                        <select  name="options" class="select" style=" width: 350px; height:3em;" >
+                           <?php foreach ($options as $value => $label) {
+                            ?>
+                           
+                                 <option  value="<?php echo $value; ?>"
+                                 style="height:1000000px;"  ><?php echo $label; ?>
+                              </option> 
+
+                                 <?php } ?>
+                                 
+                           </select>
+                           <small class="form-text text-muted">Gouvernorat de l'utilisateur</small>
+                             </div>
+
+                        <label style="color:#00dbfb" class="col-lg-2 col-form-label"><B>Adresse</B></label>
+                        <div class="col-lg-4">
+                           <input type="text" class="form-control" name="utilisateur[gouvernorat]" value="<?=$utilisateur->adresse ?? ''?>">
+                           <small class="form-text text-muted">Adresse</small>
+                        </div>
+                     </div>
 
 
 
 
                      <div class="form-group row">
                         <label style="color:#00dbfb" class="col-lg-2 col-form-label"> <B> Date de Naissance</B></label>
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                            <input type="date" class="form-control" name="utilisateur[dateNaissance]" value="<?=$utilisateur->dateNaissance ?? ''?>">
                            <small class="form-text text-muted">Date de naissance</small>
                         </div>
-                       
-                     </div>
-                     <div class="form-group row">
                          <label style="color:#00dbfb" class="col-lg-2 col-form-label"> <B>Numéro de téléphone</B></label>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                            <input type="number" class="form-control" min="0"  oninput="this.value = !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" name="utilisateur[tel]" value="<?=$utilisateur->tel ?? ''?>">
                            <small class="form-text text-muted">Numéro de téléphone</small>
                         </div>
-                     </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
                      <div class="form-group row">
-                        <label style="color:#00c7e3" class="col-lg-2 col-form-label"><B>Adresse</B></label>
-                        <div class="col-lg-6">
+                        <label style="color:#00dbfb" class="col-lg-2 col-form-label"><B>Adresse</B></label>
+                        <div class="col-lg-4">
                            <input type="text" class="form-control" name="utilisateur[adresse]" value="<?=$utilisateur->adresse ?? ''?>">
                            <small class="form-text text-muted">Adresse de l'utilisateur</small>
                         </div>
+                        <label style="color:#00dbfb" class="col-lg-2 col-form-label"><B>Code Postal</B></label>
+                        <div class="col-lg-4">
+                           <input type="number" class="form-control" min="0"  oninput="this.value = !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" name="utilisateur[cpostal]" value="<?=$utilisateur->cpostal ?? ''?>">
+                           <small class="form-text text-muted">Code Postal</small>
+                        </div>
                      </div>
 
-
+<label style="color:#00c7e3" class="col-lg-2 col-form-label"><B>Genre</B></label>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="utilisateur[genre]" value="<?=$utilisateur->genre ?? ''?>" id="inlineRadio1" >
+  <label class="form-check-label" for="inlineRadio1">Homme
+</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="utilisateur[genre]" value="<?=$utilisateur->genre ?? ''?>" id="inlineRadio2" >
+  <label class="form-check-label" for="inlineRadio2">Femme</label>
+</div>
 
 
 
                      <div class="text-end">
                         <button type="submit" class="btn btn-primary" style="margin-right: 5px;">Enregistrer </button>
-                        <button class="btn btn-secondary" style="margin-right:6px;">Annuler</button>
+                        <button type="reset" class="btn btn-secondary" style="margin-right:6px;">Annuler</button>
                         
                      </div>
                   </form>
