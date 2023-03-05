@@ -1,46 +1,95 @@
 
 
-
-
-
-
 <div class="page-wrapper">
 <div class="content container-fluid">
+   <div class="page-header">
+      <div class="row">
+         <div class="col-sm-12">
+            <h3 class="page-title">Abonnement</h3>
+         </div>
+      </div>
+   </div>
    <div class="row">
-      <div class="col-md-12">
-         <h5 class="mb-3">Spécialités</h5>
-         <div class="row">
-            <div class="col-md-6">
-                <form class="form-validate" method='post' enctype="multipart/form-data">
-                <input type="hidden" name="specialite[id]" value="<?=$specialite->id ?? ''?>">
-               <div class="form-group form-focus">
-                  <input type="text" class="form-control floating" name="specialite[nom]" value="<?=$specialite->nom ?? ''?>" placeholder="Enter nom de specialite" required>
-                  <label class="focus-label">Nom de specialite <span class="text-danger">*</span></label>
-               </div>
+      <div class="col-sm-12">
+         <div class="card">
+            <div class="card-header">
+               <div class="card-body">
+                  <div class="row">
+                     <div class="col-sm">
+                        <form class="needs-validation" novalidate method='post' enctype="multipart/form-data">
+                           <input type="hidden" name="specialite[id]" value="<?=$specialite->id ?? ''?>">
+                           <div class="form-row row">
+                              <div class="col-md-5 mb-3">
+                                 <label for="validationCustom01">Nom de spécialité</label>
+                                 <input type="text" class="form-control" id="validationCustom01" name="specialite[nom]" value="<?=$specialite->nom ?? ''?>" placeholder="Enter nom de spécialité" required>
+                                 <div class="invalid-feedback">
+                                    Vous devez saisir le nom de spécialité.
+                                 </div>
+                              </div>
+
+                              <div class="col-md-5 mb-3" style="margin-right: 20px;">
+                                 <label for="validationCustom04" for="val-suggestions">Image</label>
+                                 <input type="file" class="form-control" id="validationCustom04" id="fileToUpload" name="fileToUpload" 
+                                            accept="image/gif, image/jpeg, image/jpg, image/png" required>
+                                 <div class="invalid-feedback">
+                                    Vous devez saisir le prix.
+                                 </div>
+                              </div>
+
+</div>
+                             
+                              
 
 
-               <div class="form-group row">
-                                        <label class="col-lg-3 col-form-label" for="val-suggestions">Image <span class="text-danger">*</span></label>
-                                        <div class="col-lg-6">
-                                            <input type="file" class="form-control" id="fileToUpload" name="fileToUpload"
-                                            accept="image/gif, image/jpeg, image/jpg, image/png"
-                                            />
-                                        </div>
-                                    </div>
-              
-              
-              
-               <div id="videoId" style="display: none">
-                  <div class="form-group form-focus">
-                     <input type="text" class="form-control floating">
-                     <label class="focus-label">Video ID <span class="text-danger">*</span></label>
+
+                              
+                           <div class="text-end" style="margin-top: 15px;">
+                           
+                           <button class="btn btn-primary" type="submit">Sauvegarder</button>
+                           <button class="btn btn-secondary" style="margin-right:6px;">Annuler</button>
+</div>
+                        </form>
+                     </div>
                   </div>
                </div>
-               <button type="submit" class="btn btn-primary save-btn">sauvegarder</button>
-</form>
             </div>
          </div>
       </div>
    </div>
 </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
