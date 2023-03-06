@@ -134,7 +134,7 @@
 
                         <label style="color:#00dbfb" class="col-lg-2 col-form-label"><B>Adresse</B></label>
                         <div class="col-lg-4">
-                           <input type="text" class="form-control" name="utilisateur[gouvernorat]" value="<?=$utilisateur->adresse ?? ''?>">
+                           <input type="text" class="form-control" name="utilisateur[adresse]" value="<?=$utilisateur->adresse ?? ''?>">
                            <small class="form-text text-muted">Adresse</small>
                         </div>
                      </div>
@@ -160,24 +160,20 @@
 
 
 
-
-
-
-
-
-
-                     <div class="form-group row">
-                        <label style="color:#00dbfb" class="col-lg-2 col-form-label"><B>Adresse</B></label>
-                        <div class="col-lg-4">
-                           <input type="text" class="form-control" name="utilisateur[adresse]" value="<?=$utilisateur->adresse ?? ''?>">
-                           <small class="form-text text-muted">Adresse de l'utilisateur</small>
-                        </div>
+<div class="form-group row">
+                        
                         <label style="color:#00dbfb" class="col-lg-2 col-form-label"><B>Code Postal</B></label>
                         <div class="col-lg-4">
                            <input type="number" class="form-control" min="0"  oninput="this.value = !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" name="utilisateur[cpostal]" value="<?=$utilisateur->cpostal ?? ''?>">
                            <small class="form-text text-muted">Code Postal</small>
                         </div>
                      </div>
+
+
+
+
+
+                     
 
 <label style="color:#00c7e3" class="col-lg-2 col-form-label"><B>Genre</B></label>
 <div class="form-check form-check-inline">
