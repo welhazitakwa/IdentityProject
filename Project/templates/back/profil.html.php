@@ -25,7 +25,7 @@
                      </div>
                      <div class="col-md-4 mb-3">
                         <strong><p style="color: black";>Genre</p></strong>
-                        <p></p>
+                        <p><?= $user-> genre?></p>
                      </div>
                      <div class="col-md-4 mb-3">
                         <strong><p style="color: black";>Age</p></strong>
@@ -36,7 +36,7 @@
                      </div>
                      <div  class="col-md-4 mb-1">
                         <strong><p style="color: black";> Gouvernorat </p></strong>
-                        <p></p>
+                        <p><?= $user-> gouvernorat?></p>
                      </div>
                      
                      <div  class="col-md-4 mb-3">
@@ -47,7 +47,7 @@
                      
                      <div  class="col-md-4 mb-3">
                         <strong><p style="color: black";> Code </p></strong>
-                        <p></p>
+                        <p><?= $user-> cpostal?></p>
                      </div>
                   </div>
                </div>
