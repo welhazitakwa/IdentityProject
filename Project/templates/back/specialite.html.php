@@ -12,7 +12,12 @@
                <div class="page-header">
                   <div class="row align-items-center">
                      <div class="col-md-12 d-flex justify-content-end">
-                        <div class="doc-badge me-3">Spécialités <span class="ms-1">48</span></div>
+                        <div class="doc-badge me-3">Spécialités <span class="ms-1"><?php 
+$i=0;
+$somme=0;
+foreach ($specialites as $specialite){ $i++; $somme=$i ;}
+echo $somme ;
+?></span></div>
                         <a href="/specialite/edit"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Add New</a>
                      </div>
                   </div>
