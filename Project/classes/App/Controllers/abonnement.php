@@ -65,6 +65,7 @@ class abonnement{
 	public function list(){
 		
 		$abonnements = $this->abonnementsTable->findAll();
+
 		$user = $this->authentication->getUser();
 
 		$title = 'Liste :: abonnements';
