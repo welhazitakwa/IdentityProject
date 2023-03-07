@@ -18,7 +18,7 @@ $somme=0;
 foreach ($specialites as $specialite){ $i++; $somme=$i ;}
 echo $somme ;
 ?></span></div>
-                        <a href="/specialite/edit"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Add New</a>
+                        <a href="/specialite/edit"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouvelle</a>
                      </div>
                   </div>
                </div>
@@ -36,7 +36,7 @@ echo $somme ;
                                  </div>
                                  <div class="SortBy">
                                     <div class="selectBoxes order-by">
-                                       <p class="mb-0"><img src="/back/img/icon/sort.png" class="me-2" alt="icon"> Order by </p>
+                                       <p class="mb-0"><img src="/back/img/icon/sort.png" class="me-2" alt="icon"> Filter par </p>
                                        <span class="down-icon"><i class="feather-chevron-down"></i></span>
                                     </div>
                                     <div id="checkBox">
@@ -94,7 +94,7 @@ echo $somme ;
 
                                           <td> 
                                               <div class="actions">
-                                                  <a href="/specialite/edit?id=<?=$specialite->id?>" class="text-black"><i class="feather-edit-3 me-1"></i>Modifier</a>
+                                                  <a href="/specialite/edit?id=<?=$specialite->id?>" class="text-dark"><i class="feather-edit-3 me-1"></i>Modifier</a>
                                                   <a href="/specialite/delete?id=<?=$specialite->id?>" onClick="return(confirm('Voulez-vous sur supprimer cette specialites?'))" class="text-danger"><i class="feather-trash-2 me-1"></i>Supprimer</a>
                                               </div>
                                           </td>

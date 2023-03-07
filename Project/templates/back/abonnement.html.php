@@ -11,7 +11,7 @@ $somme=0;
 foreach ($abonnements as $abonnement){ $i++; $somme=$i ;}
 echo $somme ;
 ?> </span></div>
-                        <a href="/abonnement/edit"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Add New</a>
+                        <a href="/abonnement/edit"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouveau</a>
                      </div>
                   </div>
                </div>
@@ -25,11 +25,11 @@ echo $somme ;
                               </div>
                               <div class="col-auto d-flex flex-wrap">
                                  <div class="form-custom me-2">
-                                    <div id="tableSearch" class="dataTables_wrapper"></div>
+                                    <div id="tableSearch" class="dataTables_wrapper" ></div>
                                  </div>
                                  <div class="SortBy">
                                     <div class="selectBoxes order-by">
-                                       <p class="mb-0"><img src="/back/img/icon/sort.png" class="me-2" alt="icon"> Order by </p>
+                                       <p class="mb-0"><img src="/back/img/icon/sort.png" class="me-2" alt="icon"> Filter par </p>
                                        <span class="down-icon"><i class="feather-chevron-down"></i></span>
                                     </div>
                                     <div id="checkBox">
@@ -97,7 +97,7 @@ echo $somme ;
 
 
 
-    <a href="/abonnement/edit?id=<?=$abonnement->id?>" class="edit-pro"><i class="feather-edit-3"></i> Modifier</a>
+    <a href="/abonnement/edit?id=<?=$abonnement->id?>" class="text-dark"><i class="feather-edit-3"></i> Modifier</a>
                                                   <a href="/abonnement/delete?id=<?=$abonnement->id?>" onClick="return(confirm('Voulez-vous sur supprimer cette abonnements?'))" class="text-danger"><i class="feather-trash-2 me-1"></i>Supprimer</a>
                                               </div>
                                           </td>
