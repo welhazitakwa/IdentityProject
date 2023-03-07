@@ -29,7 +29,13 @@
                      </div>
                      <div class="col-md-4 mb-3">
                         <strong><p style="color: black";>Age</p></strong>
-                        <p></p>
+                        <?php
+
+            $dateNaissance = $user->dateNaissance ;
+            $aujourdhui = date("Y-m-d");
+            $diff = date_diff(date_create($dateNaissance), date_create($aujourdhui));
+            echo $diff->format('%y');
+?>
                      </div>
                      <div class="col-md-12">
                         <h4 style="color:#00dbfb" class="pro-title">Adresse & Localisation</h4>
