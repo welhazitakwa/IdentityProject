@@ -166,6 +166,12 @@ class mapRoutes implements \AIFrame\Routes {
 				],
 				'login' => true
 			],
+			'categorie/logout' => [
+				'GET' => [
+					'controller' => $loginController,
+					'action' => 'logout'
+				]
+			],
 
 			'categorie/delete' => [
 				'GET' => [
@@ -240,6 +246,12 @@ class mapRoutes implements \AIFrame\Routes {
 				],
 				'login' => true
 			],
+			'abonnement/logout' => [
+				'GET' => [
+					'controller' => $loginController,
+					'action' => 'logout'
+				]
+			],
 
 
 			//specialite
@@ -268,6 +280,12 @@ class mapRoutes implements \AIFrame\Routes {
 					'action' => 'delete'
 				],
 				'login' => true
+			],
+			'specialite/logout' => [
+				'GET' => [
+					'controller' => $loginController,
+					'action' => 'logout'
+				]
 			],
 			
 			
