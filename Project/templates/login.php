@@ -60,13 +60,8 @@
                         <div class="dont-have">Don't have an account? <a href="/register">Sign up</a></div>
                         <div class="login-or">
                            <span class="or-line"></span>
-                           <p class="span-or">or login with </p>
-                        </div>
-                        <div class="social-login">
-                           <a href="#"><img src="/back/img/icon/google.png" class="img-fluid" alt="Logo"></a>
-                           <a href="#"><img src="/back/img/icon/facebook.png" class="img-fluid" alt="Logo"></a>
-                           <a href="#"><img src="/back/img/icon/twitter.png" class="img-fluid" alt="Logo"></a>
-                        </div>
+                           
+                        
                      </form>
                   </div>
                </div>
