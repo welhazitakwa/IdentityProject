@@ -117,8 +117,7 @@
 
 
 
-
-                        <select  name="options" class="select" style=" width: 350px; height:3em;" >
+<select  name="options" class="select" style=" width: 350px; height:3em;" >
                            <?php foreach ($options as $value => $label) {
                             ?>
                            
