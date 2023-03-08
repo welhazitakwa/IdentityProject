@@ -5,17 +5,18 @@ class mapRoutes implements \AIFrame\Routes {
 	private $utilisateursTable;
 	private $authentication;
 	#etape 1
-	private $categoriesTable;	
+	private $categoriesTable;
+		private $doctorTable;	
 	private $produitsTable;	
 	private $abonnementsTable;	
 	private $specialitesTable;
+	private $doctorsTable;	
 	
 	
 		
 
 	public function __construct() {
 		include __DIR__ . '/../../includes/DatabaseConnection.php';
- 		
 		$this->utilisateursTable = new \AIFrame\DatabaseTable($pdo, 'utilisateurs', 'id');
 		$this->authentication = new \AIFrame\Authentication($this->utilisateursTable, 'login', 'password');
 		
@@ -25,6 +26,7 @@ class mapRoutes implements \AIFrame\Routes {
 		$this->produitsTable = new \AIFrame\DatabaseTable($pdo, 'produits', 'id');
 		$this->abonnementsTable = new \AIFrame\DatabaseTable($pdo, 'abonnements', 'id');
 		$this->specialitesTable = new \AIFrame\DatabaseTable($pdo, 'specialites', 'id');
+		$this->doctorsTable = new \AIFrame\DatabaseTable($pdo, 'doctors', 'id');
 	
 	
 	}
@@ -39,6 +41,7 @@ class mapRoutes implements \AIFrame\Routes {
 		$produitController = new \App\Controllers\produit($this->produitsTable,$this->utilisateursTable,$this->authentication);
 	    $abonnementController = new \App\Controllers\abonnement($this->abonnementsTable,$this->utilisateursTable,$this->authentication);
 		$specialiteController = new \App\Controllers\specialite($this->specialitesTable,$this->utilisateursTable,$this->authentication);
+		$doctorController = new \App\Controllers\doctor($this->doctorsTable,$this->specialitesTable,$this->utilisateursTable,$this->authentication);
 		
 		$routes = [
 		// Home
@@ -282,6 +285,42 @@ class mapRoutes implements \AIFrame\Routes {
 				'login' => true
 			],
 			'specialite/logout' => [
+				'GET' => [
+					'controller' => $loginController,
+					'action' => 'logout'
+				]
+			],
+
+
+			//doctor
+			'doctor/list' => [
+				'GET' => [
+					'controller' => $doctorController,
+					'action' => 'list'
+				],
+				'login' => true
+			],
+			
+			'doctor/edit' => [
+				'POST' => [
+					'controller' => $doctorController,
+					'action' => 'saveEdit'
+				],
+				'GET' => [
+					'controller' => $doctorController,
+					'action' => 'edit'
+				],
+				'login' => true
+			],
+
+			'doctor/delete' => [
+				'GET' => [
+					'controller' => $doctorController,
+					'action' => 'delete'
+				],
+				'login' => true
+			],
+			'doctor/logout' => [
 				'GET' => [
 					'controller' => $loginController,
 					'action' => 'logout'
