@@ -177,15 +177,14 @@
 
 <label style="color:#00c7e3" class="col-lg-2 col-form-label"><B>Genre</B></label>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="utilisateur[genre]" value="<?=$utilisateur->genre ?? ''?>" id="inlineRadio1" >
+  <input class="form-check-input" type="radio" name="utilisateur[genre]" value="Homme" id="inlineRadio1" >
   <label class="form-check-label" for="inlineRadio1">Homme
 </label>
 </div>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="utilisateur[genre]" value="<?=$utilisateur->genre ?? ''?>" id="inlineRadio2" >
+  <input class="form-check-input" type="radio" name="utilisateur[genre]" value="Femme" id="inlineRadio2" >
   <label class="form-check-label" for="inlineRadio2">Femme</label>
 </div>
-
 
 
                      <div class="text-end">
