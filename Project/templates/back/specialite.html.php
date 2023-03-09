@@ -23,7 +23,7 @@
                         <div class="card-header border-bottom-0">
                            <div class="row align-items-center">
                               <div class="col">
-                                 <h5 class="card-title">Spécialités</h5>
+                                 <h5 class="card-title">Liste des spécialités</h5>
                               </div>
                               <div class="col-auto d-flex flex-wrap">
                                  <div class="form-custom me-2">
@@ -66,9 +66,9 @@
                               <table class="datatable table table-borderless hover-table" id="data-table">
                                  <thead class="thead-light">
                                     <tr>
-                                       <th>ID</th>
+                                      
                                        <th>Spécialité</th>
-                                       <th>Action</th>
+                                       <th style="width:15%;">Action</th>
                                     </tr>
                                  </thead>
                                  <tbody>
@@ -77,10 +77,10 @@
                                       ?>
                                     <tr>
 
-                                    <td><?=$specialite->id?></td>
+                                   
                                           
                                         
-                                          <td>
+                                          <td style="margin-left:150px;">
                                              <h2 class="table-avatar">
                                              <img src='/img_spc/<?=$specialite->image?>' class="spl-img"  >
                                           <span><?=$specialite->nom?></span>
