@@ -12,12 +12,7 @@
                <div class="page-header">
                   <div class="row align-items-center">
                      <div class="col-md-12 d-flex justify-content-end">
-                        <div class="doc-badge me-3">Spécialités <span class="ms-1"><?php 
-$i=0;
-$somme=0;
-foreach ($specialites as $specialite){ $i++; $somme=$i ;}
-echo $somme ;
-?></span></div>
+                        <div class="doc-badge me-3">Spécialités <span class="ms-1"><?=$count;?></span></div>
                         <a href="/specialite/edit"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouvelle</a>
                      </div>
                   </div>
@@ -94,7 +89,7 @@ echo $somme ;
 
                                           <td> 
                                               <div class="actions">
-                                                <a href="/doctor/list?idspc=<?=$specialite->id?>" class="text-dark"><i class="feather-edit-3 me-1"></i>doctor</a>
+                                                <a href="/doctor/list?idspc=<?=$specialite->id?>" class="text-dark"><i class="feather-users"></i> Docteurs</a>
                                                   <a href="/specialite/edit?id=<?=$specialite->id?>" class="text-dark"><i class="feather-edit-3 me-1"></i>Modifier</a>
                                                   <a href="/specialite/delete?id=<?=$specialite->id?>" onClick="return(confirm('Voulez-vous sur supprimer cette specialites?'))" class="text-danger"><i class="feather-trash-2 me-1"></i>Supprimer</a>
                                               </div>
