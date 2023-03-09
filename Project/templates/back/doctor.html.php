@@ -1,24 +1,12 @@
 
 
-
-
-
-
-
-
-
-         <div class="page-wrapper">
+          <div class="page-wrapper">
             <div class="content container-fluid">
                <div class="page-header">
                   <div class="row align-items-center">
                      <div class="col-md-12 d-flex justify-content-end">
-                        <div class="doc-badge me-3">Spécialités <span class="ms-1"><?php 
-$i=0;
-$somme=0;
-foreach ($specialites as $specialite){ $i++; $somme=$i ;}
-echo $somme ;
-?></span></div>
-                        <a href="/specialite/edit"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouvelle</a>
+                        <div class="doc-badge me-3">doctors <span class="ms-1"> <?=$count;?> </span></div>
+                        <a href="/doctor/edit?idspc=<?= $_GET['idspc'];?>"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouveau</a>
                      </div>
                   </div>
                </div>
@@ -28,11 +16,11 @@ echo $somme ;
                         <div class="card-header border-bottom-0">
                            <div class="row align-items-center">
                               <div class="col">
-                                 <h5 class="card-title">Spécialités</h5>
+                                 <h5 class="card-title">liste des docteurs dans la sepécialité :<?=$specialite->nom?> </h5>
                               </div>
                               <div class="col-auto d-flex flex-wrap">
                                  <div class="form-custom me-2">
-                                    <div id="tableSearch" class="dataTables_wrapper"></div>
+                                    <div id="tableSearch" class="dataTables_wrapper" ></div>
                                  </div>
                                  <div class="SortBy">
                                     <div class="selectBoxes order-by">
@@ -70,33 +58,29 @@ echo $somme ;
                            <div class="table-responsive">
                               <table class="datatable table table-borderless hover-table" id="data-table">
                                  <thead class="thead-light">
-                                    <tr>
-                                       <th>ID</th>
-                                       <th>Spécialité</th>
-                                       <th>Action</th>
+                                    <tr>  
+                                          <th>ID</th>
+                                           
+                                          <th>experience</th>
+                                          <th width="100">Action</th> 
+                                          
                                     </tr>
                                  </thead>
                                  <tbody>
-                                 <?php foreach ($specialites as $specialite):
-                                              // if($user->id==$specialite->iduser):
+                                 <?php foreach ($doctors as $doctor):
+                                          if($_GET['idspc']==$doctor->idspc):
+                                             // foreach ($utilisateurs-> as $utilisateur)
+                                              //  if($utilisateur->id==$doctor->iduser):
                                       ?>
                                     <tr>
-
-                                    <td><?=$specialite->id?></td>
-                                          
-                                        
-                                          <td>
-                                             <h2 class="table-avatar">
-                                             <img src='/img_spc/<?=$specialite->image?>' class="spl-img"  >
-                                          <span><?=$specialite->nom?></span>
-                                              </h2>
-                                       </td>
-
+                                          <td><?=$doctor->id?></td>
+                                          <td><?=$doctor->experience?></td>
                                           <td> 
-                                              <div class="actions">
-                                                <a href="/doctor/list?idspc=<?=$specialite->id?>" class="text-dark"><i class="feather-edit-3 me-1"></i>doctor</a>
-                                                  <a href="/specialite/edit?id=<?=$specialite->id?>" class="text-dark"><i class="feather-edit-3 me-1"></i>Modifier</a>
-                                                  <a href="/specialite/delete?id=<?=$specialite->id?>" onClick="return(confirm('Voulez-vous sur supprimer cette specialites?'))" class="text-danger"><i class="feather-trash-2 me-1"></i>Supprimer</a>
+
+
+
+ 
+                                                  <a href="/doctor/delete?id=<?=$doctor->id?>&idspc=<?= $_GET['idspc'];?>" onClick="return(confirm('Voulez-vous sur supprimer cette doctors?'))" class="text-danger"><i class="feather-trash-2 me-1"></i>Supprimer</a>
                                               </div>
                                           </td>
 
@@ -105,11 +89,10 @@ echo $somme ;
                                     </tr>
 
                                     <?php 
-                                      // endif;
-                                  endforeach; 
+                                    endif;
+                                    endforeach;
                                   ?>
                                     
-                                  
                                  </tbody>
                               </table>
                            </div>
@@ -120,13 +103,3 @@ echo $somme ;
                </div>
             </div>
          </div>
-
-
-
-
-
-
-
-
-
-
