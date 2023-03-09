@@ -12,6 +12,7 @@ class mapRoutes implements \AIFrame\Routes {
 	private $specialitesTable;
 	private $doctorsTable;	
 	private $patientsTable;	
+	private $appointmentsTable;	
 	
 	
 		
@@ -29,6 +30,7 @@ class mapRoutes implements \AIFrame\Routes {
 		$this->specialitesTable = new \AIFrame\DatabaseTable($pdo, 'specialites', 'id');
 		$this->doctorsTable = new \AIFrame\DatabaseTable($pdo, 'doctors', 'id');
 		$this->patientsTable = new \AIFrame\DatabaseTable($pdo, 'patients', 'id');
+		$this->appointmentsTable = new \AIFrame\DatabaseTable($pdo, 'appointments', 'id');
 	
 	
 	}
@@ -46,6 +48,9 @@ class mapRoutes implements \AIFrame\Routes {
 		$doctorController = new \App\Controllers\doctor($this->doctorsTable,$this->specialitesTable,$this->utilisateursTable,$this->authentication);
 
 		$patientController = new \App\Controllers\patient($this->patientsTable,$this->utilisateursTable,$this->authentication);
+
+		$appointmentController = new \App\Controllers\appointment($this->appointmentsTable,$this->doctorsTable,
+		$this->patientsTable,$this->utilisateursTable,$this->authentication);
 		
 		$routes = [
 		// Home
@@ -369,6 +374,43 @@ class mapRoutes implements \AIFrame\Routes {
 				'login' => true
 			],
 			'patient/logout' => [
+				'GET' => [
+					'controller' => $loginController,
+					'action' => 'logout'
+				]
+			],
+
+
+
+			//appointment
+			'appointment/list' => [
+				'GET' => [
+					'controller' => $appointmentController,
+					'action' => 'list'
+				],
+				'login' => true
+			],
+			
+			'appointment/edit' => [
+				'POST' => [
+					'controller' => $appointmentController,
+					'action' => 'saveEdit'
+				],
+				'GET' => [
+					'controller' => $appointmentController,
+					'action' => 'edit'
+				],
+				'login' => true
+			],
+
+			'appointment/delete' => [
+				'GET' => [
+					'controller' => $appointmentController,
+					'action' => 'delete'
+				],
+				'login' => true
+			],
+			'appointment/logout' => [
 				'GET' => [
 					'controller' => $loginController,
 					'action' => 'logout'
