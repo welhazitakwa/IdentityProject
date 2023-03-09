@@ -5,8 +5,8 @@
                <div class="page-header">
                   <div class="row align-items-center">
                      <div class="col-md-12 d-flex justify-content-end">
-                        <div class="doc-badge me-3">doctors <span class="ms-1"> <?=$count;?> </span></div>
-                        <a href="/doctor/edit?idspc=<?= $_GET['idspc'];?>"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouveau</a>
+                        <div class="doc-badge me-3">Nombre des docteurs <span class="ms-1"> <?=$count;?> </span></div>
+                       <!-- <a href="/doctor/edit?idspc=<?= $_GET['idspc'];?>"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouveau</a>-->
                      </div>
                   </div>
                </div>
@@ -60,24 +60,46 @@
                                  <thead class="thead-light">
                                     <tr>  
                                           <th>ID</th>
-                                          <th>nom</th>
-                                          <th>prenom</th>
-                                          <th>experience</th>
-                                          <th width="100">Action</th> 
+                                          <th>Nom</th>
+                                          <th>Spécialité</th>
+                                          <th>Membre Depuis</th>
+                                          <th width="100">Action</th>
+                                          <th>Account Status</th> 
                                           
                                     </tr>
                                  </thead>
                                  <tbody>
-                                 <?php foreach ($doctors as $doctor):
+                                 <?php 
+                                 foreach ($doctors as $doctor):
                                           //if($_GET['idspc']==$doctor->idspc):
                                               foreach ($utilisateurs as $utilisateur):
                                                if($utilisateur->id==$doctor->iduser):
                                       ?>
                                     <tr>
                                           <td><?=$doctor->id?></td>
-                                          <td><?=$utilisateur->nom?></td>
-                                          <td><?=$utilisateur->prenom?></td>
-                                          <td><?=$doctor->experience?></td>
+                                          <td>
+                                           
+                                          <h2 class="table-avatar">
+                <a class="avatar-pos" href="#" data-bs-target="#doctorlist" data-bs-toggle="modal">
+                 <img class="avatar avatar-img" src="/img_utilisateurs/<?=$utilisateur->avatar?>" alt="Image non disponible"></a>
+                <a href="#" data-bs-target="#doctorlist" data-bs-toggle="modal" class="user-name">Dr. <?=$utilisateur->nom?></a>
+                </h2>
+                                          
+                                          </td>
+                                          <td> <?php 
+                                            foreach ($specialites as $specialite):
+                                          if($doctor->idspc==$specialite->id):
+                                          
+                                             ?>
+                                         <?=$specialite->nom?>
+                                         <?php endif;
+                                         endforeach ;?>
+                                         </td>
+                                         
+                                          <td><span class="user-name">
+                                          <?php $var = $utilisateur->date_ins;
+                                        echo date("d F Y", strtotime($var) ); ?>
+                                           </span><span class="d-block"><?=$utilisateur->date_ins ?></span></td>
                                           <td> 
 
 
@@ -87,7 +109,14 @@
                                               </div>
                                           </td>
 
-
+                     <td>
+<label class="toggle-switch" >
+<input type="checkbox" class="toggle-switch-input" >
+<span class="toggle-switch-label">
+<span class="toggle-switch-indicator"></span>
+</span>
+</label>
+</td>
                                       
                                     </tr>
 
