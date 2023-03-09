@@ -90,6 +90,29 @@ class doctor{
 					]
 				];
 	}
+	public function listAll(){
+		
+		$doctors = $this->doctorsTable->findAll();
+		$count = $this->doctorsTable->total();
+	//	$specialite = $this->specialitesTable->findById($_GET['idspc']);
+		$utilisateurs = $this->utilisateursTable->findAll();
+
+		$user = $this->authentication->getUser();
+
+
+		$title = 'Liste Docteurs';
+		return ['template' => 'back/doctorAll.html.php',
+				'title' => $title,
+				'variables' => [
+					'doctors' => $doctors,
+					//'specialite' => $specialite,
+     'utilisateurs' => $utilisateurs,
+     'count' => $count,
+     'user' => $user
+					
+					]
+				];
+	}
 
 //--------Suppression de données---------//
 
