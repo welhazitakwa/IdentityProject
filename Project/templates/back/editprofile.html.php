@@ -111,13 +111,15 @@
                         ?>
 
 
-
+  <?php $NbOption=sizeof($options) ; 
+   $gvrnt = $utilisateur->gouvernorat
+  ?>
 <select  name="utilisateur[gouvernorat]" class="select" style=" width: 350px; height:3em;" >
                            <?php foreach ($options as $value => $label) {
                             ?>
-                           
-                                 <option  value="<?php echo $label; ?>"
-                                 style="height:1000000px;"  ><?php echo $label; ?>
+  
+                                 <option  value="<?php echo $label; ?>" 
+                                 style="height:1000000px;" <?php if($label == $gvrnt) { echo 'selected'; } ; ?> ><?php echo $label; ?>
                               </option> 
 
                                  <?php } ?>
