@@ -187,7 +187,7 @@
                         <a href="/patient/list"><i class="feather-users"></i> <span>Patients</span></a>
                      </li>
                      <li>
-                        <a href="ratings.html"><i class="feather-star"></i> <span>Reviews</span></a>
+                        <a href="/appointment/list"><i class="feather-calendar"></i> <span>Appointments</span></a>
                      </li>
                      <li>
                         <a href="transaction.html"><i class="feather-credit-card"></i> <span>Transactions</span></a>
