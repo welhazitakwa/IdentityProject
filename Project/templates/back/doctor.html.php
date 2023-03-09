@@ -60,7 +60,8 @@
                                  <thead class="thead-light">
                                     <tr>  
                                           <th>ID</th>
-                                           
+                                          <th>nom</th>
+                                          <th>prenom</th>
                                           <th>experience</th>
                                           <th width="100">Action</th> 
                                           
@@ -69,11 +70,13 @@
                                  <tbody>
                                  <?php foreach ($doctors as $doctor):
                                           if($_GET['idspc']==$doctor->idspc):
-                                             // foreach ($utilisateurs-> as $utilisateur)
-                                              //  if($utilisateur->id==$doctor->iduser):
+                                              foreach ($utilisateurs as $utilisateur):
+                                               if($utilisateur->id==$doctor->iduser):
                                       ?>
                                     <tr>
                                           <td><?=$doctor->id?></td>
+                                          <td><?=$utilisateur->nom?></td>
+                                          <td><?=$utilisateur->prenom?></td>
                                           <td><?=$doctor->experience?></td>
                                           <td> 
 
@@ -90,7 +93,10 @@
 
                                     <?php 
                                     endif;
-                                    endforeach;
+                                 endforeach;
+                              endif;
+                           endforeach;
+                                    
                                   ?>
                                     
                                  </tbody>

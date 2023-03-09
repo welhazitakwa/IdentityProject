@@ -72,7 +72,7 @@ class doctor{
 		$doctors = $this->doctorsTable->findAll();
 		$count = $this->doctorsTable->total();
 		$specialite = $this->specialitesTable->findById($_GET['idspc']);
-		//$utilisateurs = $this->utilisateursTable->findAll();
+		$utilisateurs = $this->utilisateursTable->findAll();
 
 		$user = $this->authentication->getUser();
 
@@ -83,7 +83,7 @@ class doctor{
 				'variables' => [
 					'doctors' => $doctors,
 					'specialite' => $specialite,
-     //'utilisateurs' => $utilisateurs,
+     'utilisateurs' => $utilisateurs,
      'count' => $count,
      'user' => $user
 					
