@@ -177,7 +177,11 @@
                         <a href="/specialite/list"><i class="feather-package"></i> <span>Specialities</span></a>
                      </li>
                      <li>
-                        <a href="/doctor/list"><i class="feather-user"></i> <span>Doctors</span></a>
+
+                       <!-- <a href="/doctor/list"><i class="feather-user"></i> <span>Doctors</span></a>-->
+
+                        <a href="/doctor/listall"><i class="feather-user-plus"></i> <span>Doctors</span></a>
+
                      </li>
                      <li>
                         <a href="/patient/list"><i class="feather-users"></i> <span>Patients</span></a>

@@ -305,6 +305,14 @@ class mapRoutes implements \AIFrame\Routes {
 				'login' => true
 			],
 			
+			'doctor/listall' => [
+				'GET' => [
+					'controller' => $doctorController,
+					'action' => 'listAll'
+				],
+				'login' => true
+			],
+			
 			'doctor/edit' => [
 				'POST' => [
 					'controller' => $doctorController,
