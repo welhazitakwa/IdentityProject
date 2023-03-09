@@ -180,7 +180,7 @@
                         <a href="/doctor/list"><i class="feather-user"></i> <span>Doctors</span></a>
                      </li>
                      <li>
-                        <a href="/patients/list"><i class="feather-users"></i> <span>Patients</span></a>
+                        <a href="/patient/list"><i class="feather-users"></i> <span>Patients</span></a>
                      </li>
                      <li>
                         <a href="ratings.html"><i class="feather-star"></i> <span>Reviews</span></a>
