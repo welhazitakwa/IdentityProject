@@ -65,6 +65,7 @@ class abonnement{
 	public function list(){
 		
 		$abonnements = $this->abonnementsTable->findAll();
+				$count = $this->abonnementsTable->total();
 
 		$user = $this->authentication->getUser();
 
@@ -73,6 +74,7 @@ class abonnement{
 				'title' => $title,
 				'variables' => [
 					'abonnements' => $abonnements,
+					'count' => $count,
 					'user' => $user
 					]
 				];

@@ -80,13 +80,16 @@ class specialite{
 	public function list(){
 		
 		$specialites = $this->specialitesTable->findAll();
+		$count = $this->specialitesTable->total();
 		$user = $this->authentication->getUser();
+		
 
 		$title = 'Liste :: specialites';
 		return ['template' => 'back/specialite.html.php',
 				'title' => $title,
 				'variables' => [
 					'specialites' => $specialites,
+					'count' => $count,
 					'user' => $user
 					]
 				];

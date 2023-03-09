@@ -11,6 +11,7 @@ class mapRoutes implements \AIFrame\Routes {
 	private $abonnementsTable;	
 	private $specialitesTable;
 	private $doctorsTable;	
+	private $patientsTable;	
 	
 	
 		
@@ -27,6 +28,7 @@ class mapRoutes implements \AIFrame\Routes {
 		$this->abonnementsTable = new \AIFrame\DatabaseTable($pdo, 'abonnements', 'id');
 		$this->specialitesTable = new \AIFrame\DatabaseTable($pdo, 'specialites', 'id');
 		$this->doctorsTable = new \AIFrame\DatabaseTable($pdo, 'doctors', 'id');
+		$this->patientsTable = new \AIFrame\DatabaseTable($pdo, 'patients', 'id');
 	
 	
 	}
@@ -42,6 +44,8 @@ class mapRoutes implements \AIFrame\Routes {
 	    $abonnementController = new \App\Controllers\abonnement($this->abonnementsTable,$this->utilisateursTable,$this->authentication);
 		$specialiteController = new \App\Controllers\specialite($this->specialitesTable,$this->utilisateursTable,$this->authentication);
 		$doctorController = new \App\Controllers\doctor($this->doctorsTable,$this->specialitesTable,$this->utilisateursTable,$this->authentication);
+
+		$patientController = new \App\Controllers\patient($this->patientsTable,$this->utilisateursTable,$this->authentication);
 		
 		$routes = [
 		// Home
@@ -329,6 +333,42 @@ class mapRoutes implements \AIFrame\Routes {
 				'login' => true
 			],
 			'doctor/logout' => [
+				'GET' => [
+					'controller' => $loginController,
+					'action' => 'logout'
+				]
+			],
+
+
+			//patient
+			'patient/list' => [
+				'GET' => [
+					'controller' => $patientController,
+					'action' => 'list'
+				],
+				'login' => true
+			],
+			
+			'patient/edit' => [
+				'POST' => [
+					'controller' => $patientController,
+					'action' => 'saveEdit'
+				],
+				'GET' => [
+					'controller' => $patientController,
+					'action' => 'edit'
+				],
+				'login' => true
+			],
+
+			'patient/delete' => [
+				'GET' => [
+					'controller' => $patientController,
+					'action' => 'delete'
+				],
+				'login' => true
+			],
+			'patient/logout' => [
 				'GET' => [
 					'controller' => $loginController,
 					'action' => 'logout'
