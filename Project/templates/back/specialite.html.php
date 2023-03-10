@@ -67,8 +67,8 @@
                                  <thead class="thead-light">
                                     <tr>
                                       
-                                       <th>Spécialité</th>
-                                       <th style="width:15%;">Action</th>
+                                       <th style="width:10%;">Spécialité</th>
+                                       <th style="width:10%;">Action</th>
                                     </tr>
                                  </thead>
                                  <tbody>

@@ -168,7 +168,7 @@
                         <a href="/"><i class="feather-grid"></i> <span>Dashboard</span></a>
                      </li>
                      <li>
-                        <a href="/categorie/list"><i class="feather-calendar"></i> <span>Categories</span></a>
+                        <!--<a href="/categorie/list"><i class="feather-calendar"></i> <span>Categories</span></a>-->
                      </li>
                      <li>
                         <a href="/abonnement/list"><i class="feather-dollar-sign"></i> <span>Abonnements</span></a>

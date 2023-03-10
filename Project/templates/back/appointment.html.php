@@ -3,7 +3,7 @@
                <div class="page-header">
                   <div class="row align-items-center">
                      <div class="col-md-12 d-flex justify-content-end">
-                        <div class="doc-badge me-3">Totale des Appointments <span class="ms-1"> <?=$count;?> </span></div>
+                        <div class="doc-badge me-3">Totale des Rendez_vous <span class="ms-1"> <?=$count;?> </span></div>
                         <!--<a href="/appointment/edit?idspc=<?= $_GET['idspc'];?>"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouveau</a>-->
                      </div>
                   </div>
@@ -14,7 +14,7 @@
                         <div class="card-header border-bottom-0">
                            <div class="row align-items-center">
                               <div class="col">
-                                 <h5 class="card-title">Appointments </h5>
+                                 <h5 class="card-title">Rendez_vous </h5>
                               </div>
                               <div class="col-auto d-flex flex-wrap">
                                  <div class="form-custom me-2">
