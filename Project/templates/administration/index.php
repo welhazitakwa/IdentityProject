@@ -174,28 +174,28 @@
                         <a href="/abonnement/list"><i class="feather-dollar-sign"></i> <span>Abonnements</span></a>
                      </li>
                      <li>
-                        <a href="/specialite/list"><i class="feather-package"></i> <span>Specialities</span></a>
+                        <a href="/specialite/list"><i class="feather-package"></i> <span>Spécialités</span></a>
                      </li>
                      <li>
 
                        <!-- <a href="/doctor/list"><i class="feather-user"></i> <span>Doctors</span></a>-->
 
-                        <a href="/doctor/listall"><i class="feather-user-plus"></i> <span>Doctors</span></a>
+                        <a href="/doctor/listall"><i class="feather-user"></i> <span>Docteurs</span></a>
 
                      </li>
                      <li>
                         <a href="/patient/list"><i class="feather-users"></i> <span>Patients</span></a>
                      </li>
                      <li>
-                        <a href="/appointment/list"><i class="feather-calendar"></i> <span>Appointments</span></a>
+                        <a href="/appointment/list"><i class="feather-calendar"></i> <span>Rendez-vous</span></a>
                      </li>
                      <li>
-                        <a href="transaction.html"><i class="feather-credit-card"></i> <span>Transactions</span></a>
+                        <!--<a href="transaction.html"><i class="feather-credit-card"></i> <span>Transactions</span></a>-->
                      </li>
                      <li>
-                        <a href="settings.html"><i class="feather-sliders"></i> <span> Settings</span></a>
+                        <a href="settings.html"><i class="feather-sliders"></i> <span>Paramètres</span></a>
                      </li>
-                     <li class="submenu">
+                     <!--<li class="submenu">
                         <a href="#"><i class="feather-file-text"></i> <span> Reports</span> <span class="menu-arrow"></span></a>
                         <ul>
                            <li><a href="appointment-report.html">Appointment Report</a></li>
@@ -203,7 +203,7 @@
                            <li><a href="invoice-report.html">Invoice Report</a></li>
                            <li><a href="user-reports.html">Users Report</a></li>
                         </ul>
-                     </li>
+                     </li>-->
                     <!-- <li class="menu-title">
                         <span>Pharmacy</span>
                      </li>
@@ -224,7 +224,7 @@
                      <li class="menu-title">
                         <span>Blog</span>
                      </li>-->
-                     <li class="submenu">
+                    <!-- <li class="submenu">
                         <a href="#"><i class="feather-grid"></i> <span> Blog</span> <span class="menu-arrow"></span></a>
                         <ul>
                            <li><a href="active-blog.html">Blogs</a></li>
@@ -232,7 +232,7 @@
                            <li><a href="add-blog.html">Add Blog</a></li>
                            <li><a href="edit-blog.html">Edit Blog</a></li>
                         </ul>
-                     </li>
+                     </li>-->
                     <!-- <li class="menu-title">
                         <span>Pages</span>
                      </li>
