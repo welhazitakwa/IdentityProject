@@ -65,7 +65,7 @@
                                           <th>Avantages</th>
                                           <th>Prix</th>
                                           <th>Durée</th>
-                                          <th style="width:9%;" >  &emsp;Visibilité   </th>
+                                          <th style="width:9%;" >  &emsp;Visibilité</th>
                                           <th style="width:15%;">&emsp; Actions</th>
                                             
 
@@ -92,13 +92,7 @@
                               }echo $text[$i];
                            }
                            ?>
-                                          
-                                          
-                                          
-                                          
-                                       
-                                       
-                                       
+
                                        
                                        </td>
                                           <td><?=$abonnement->prix.' '.'dt'?></td>
@@ -114,14 +108,11 @@
                                                 <?php } else { ?>
             <a href="/abonnement/publier?id=<?=$abonnement->id?>&etat=0" class="text-secondary"><i class="text-secondary feather-eye-off me-1"></i>Depublier</a>
                                                 <?php }?>
-
 </td>
          <td>                                       
     <a href="/abonnement/edit?id=<?=$abonnement->id?>" class="text-dark">
     <i class="feather-edit-3"></i> Modifier &emsp;</a>
-                                                                        
     <a href="/abonnement/delete?id=<?=$abonnement->id?>" onClick="return(confirm('Voulez-vous sur supprimer cette abonnements?'))" class="text-danger"><i class="feather-trash-2 me-1"></i>Supprimer</a>
-                                            
          </td>
 
   </div>
@@ -156,4 +147,4 @@ function detectLineBreak() {
     echo "<br>";
   } 
 }
-</scrip>
+</script>
