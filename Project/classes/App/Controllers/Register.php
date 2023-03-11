@@ -129,12 +129,18 @@ class Register {
 		$file_loc=$_FILES['fileToUpload']['tmp_name'];
 //Gold 2.jpg /pc/tmp
 		move_uploaded_file($file_loc,$target_file); // mv tmpfile dossier/nexnamefile
-			$utilisateur = $_POST['utilisateur'];
+			
+		if ($_FILES['fileToUpload']['error'] == 4 || ($_FILES['fileToUpload']['size'] == 0 && $_FILES['fileToUpload']['error'] == 0))
+{$utilisateur = $_POST['utilisateur'];
+    // cover_image is empty (and not an error), or no file was uploaded
+}else{
+	$utilisateur = $_POST['utilisateur'];
 		$utilisateur['avatar']=$final_file;
-		//$utilisateur = $_POST['utilisateur'];
+}
 		$this->utilisateursTable->save($utilisateur);
 		header('location: /editprofil?id='.$_GET['id'].'&msg=1');
 
+		
 
 	}
 

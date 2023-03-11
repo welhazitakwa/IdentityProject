@@ -74,8 +74,16 @@
                      <div class="form-group row">
                         <label style="color:#00dbfb" class="col-lg-2 col-form-label">  <B>Email</B></label>
                         <div class="col-lg-4">
-                           <input type="email" class="form-control" name="utilisateur[email]" value="<?=$utilisateur->email ?? ''?>">
-                           <small class="form-text text-muted">Email de l'utilisateur</small>
+                           <input type="email" class="form-control" name="utilisateur[email]" value="<?=$utilisateur->email ?? ''?>"   >
+                           <small class="form-text text-muted"><?php
+  $email = $utilisateur->email;
+  // Valider l'email
+  if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+    echo "L'adresse e-mail est valide";
+  }else{
+    echo "L'adresse e-mail n'est pas valide";
+  }
+?>Email de l'utilisateur</small>
                         </div>
 
                         <label style="color:#00dbfb" class="col-lg-2 col-form-label"><B>Login</B></label>
@@ -176,12 +184,16 @@
 
 <label style="color:#00c7e3" class="col-lg-2 col-form-label"><B>Genre</B></label>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="utilisateur[genre]" value="Homme" id="inlineRadio1" >
+  <input class="form-check-input" type="radio" name="utilisateur[genre]" value="Homme" <?php if ($utilisateur->genre == 'Homme') echo "checked='checked'"; ?>id="inlineRadio1" >
   <label class="form-check-label" for="inlineRadio1">Homme
+     
+
 </label>
 </div>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" name="utilisateur[genre]" value="Femme" id="inlineRadio2" >
+  <input class="form-check-input" type="radio"
+  name="utilisateur[genre]" value="Femme"   <?php if ($utilisateur->genre == 'Femme') echo "checked='checked'"; ?>
+id="inlineRadio2" >
   <label class="form-check-label" for="inlineRadio2">Femme</label>
 </div>
 
