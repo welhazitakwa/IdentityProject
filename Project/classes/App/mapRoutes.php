@@ -158,7 +158,13 @@ class mapRoutes implements \AIFrame\Routes {
 				'login' => true,
 				'permissions' => \App\Entity\utilisateur::EDIT_USER_ACCESS
 			],
-			
+						'utilisateur/bloquer' => [
+				'GET' => [
+					'controller' => $utilisateurController,
+					'action' => 'bloquer'
+				],
+				'login' => true
+			],
 			//categorie
 			'categorie/list' => [
 				'GET' => [

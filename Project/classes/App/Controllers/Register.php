@@ -150,7 +150,7 @@ class Register {
 		$utilisateur['etat'] = $_GET['etat'];
 		
 		$this->utilisateursTable->save($utilisateur);
-		header('location: /utilisateur/list');
+		header('location: /doctor/listall');
 	}
 
 	// public function permissions() {

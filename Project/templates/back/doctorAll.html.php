@@ -119,9 +119,17 @@
 
 
 
+  <?php if ($utilisateur->etat==0){ ?>
+            <a href="/utilisateur/bloquer?id=<?=$utilisateur->id?>&etat=1" class="text-success"><i class="feather-eye me-1 text-success"></i>Débloqué</a>
+                                                <?php } else { ?>
+            <a href="/utilisateur/bloquer?id=<?=$utilisateur->id?>&etat=0" class="text-secondary"><i class="text-secondary feather-eye-off me-1"></i>bloqué</a>
+                                                <?php }?>
 
 
-                     
+
+
+
+     <!--                
 <label class="toggle-switch" >
 
 
@@ -130,7 +138,7 @@
 <span class="toggle-switch-label">
 <span class="toggle-switch-indicator"></span>
 </span>
-</label>
+</label>-->
 </td>
                                       
                                     </tr>
