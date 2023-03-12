@@ -120,9 +120,9 @@
 
 
   <?php if ($utilisateur->etat==0){ ?>
-            <a href="/utilisateur/bloquer?id=<?=$utilisateur->id?>&etat=1" class="text-success"><i class="feather-eye me-1 text-success"></i>Débloqué</a>
+            <a href="/utilisateur/bloquer?id=<?=$utilisateur->id?>&etat=1" class="text-success"><i class="bi bi-person-check-fill text-success"></i>&nbsp;Débloqué</a>
                                                 <?php } else { ?>
-            <a href="/utilisateur/bloquer?id=<?=$utilisateur->id?>&etat=0" class="text-secondary"><i class="text-secondary feather-eye-off me-1"></i>bloqué</a>
+            <a href="/utilisateur/bloquer?id=<?=$utilisateur->id?>&etat=0" class="text-secondary"><i  class="bi bi-person-x-fill text-secondary"></i>&nbsp;bloqué</a>
                                                 <?php }?>
 
 
