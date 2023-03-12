@@ -5,7 +5,7 @@
                <div class="page-header">
                   <div class="row align-items-center">
                      <div class="col-md-12 d-flex justify-content-end">
-                        <div class="doc-badge me-3">Nombre des docteurs <span class="ms-1"> <?=$count;?> </span></div>
+                        <div class="doc-badge me-3"><B>Nombre des docteurs</B> <span class="ms-1"> <?=$count;?> </span></div>
                        <!-- <a href="/doctor/edit?idspc=<?= $_GET['idspc'];?>"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouveau</a>-->
                      </div>
                   </div>
@@ -16,7 +16,7 @@
                         <div class="card-header border-bottom-0">
                            <div class="row align-items-center">
                               <div class="col">
-                                 <h5 class="card-title">liste des docteurs </h5>
+                                 <h5 class="card-title">Liste des docteurs </h5>
                               </div>
                               <div class="col-auto d-flex flex-wrap">
                                  <div class="form-custom me-2">
@@ -28,7 +28,7 @@
                                        <span class="down-icon"><i class="feather-chevron-down"></i></span>
                                     </div>
                                     <div id="checkBox">
-                                       <form action="https://doccure.dreamguystech.com/html/template/admin/specialities.html">
+                                       <form action="#">
                                           <p class="lab-title">Order By </p>
                                           <label class="custom_radio w-100">
                                           <input type="radio" name="order">
@@ -59,12 +59,12 @@
                               <table class="datatable table table-borderless hover-table" id="data-table">
                                  <thead class="thead-light">
                                     <tr>  
-                                          <th>ID</th>
+                                          
                                           <th>Nom</th>
                                           <th>Spécialité</th>
                                           <th>Membre Depuis</th>
-                                          <th width="100">Action</th>
-                                          <th>Account Status</th> 
+                                          <th style="width:15%%">Action</th>
+                                          <th style="width:5%">Status de compte</th> 
                                           
                                     </tr>
                                  </thead>
@@ -76,7 +76,7 @@
                                                if($utilisateur->id==$doctor->iduser):
                                       ?>
                                     <tr>
-                                          <td><?=$doctor->id?></td>
+                                          
                                           <td>
                                            
                                           <h2 class="table-avatar">
@@ -91,7 +91,12 @@
                                           if($doctor->idspc==$specialite->id):
                                           
                                              ?>
-                                         <?=$specialite->nom?>
+                                             <h2 class="table-avatar">
+                                              <a class="avatar-pos" href="#" data-bs-target="#doctorlist" data-bs-toggle="modal">
+                 <img class="avatar avatar-img" src="/img_spc/<?=$specialite->image?>" alt="Image non disponible"></a>
+                  <a href="#"  class="user-name"> <?=$specialite->nom?></a>
+                </h2>
+                                         
                                          <?php endif;
                                          endforeach ;?>
                                          </td>
@@ -99,7 +104,7 @@
                                           <td><span class="user-name">
                                           <?php $var = $utilisateur->date_ins;
                                         echo date("d F Y", strtotime($var) ); ?>
-                                           </span><span class="d-block"><?=$utilisateur->date_ins ?></span></td>
+                                          <!-- </span><span class="d-block"><?=$utilisateur->date_ins ?></span></td>-->
                                           <td> 
 
 
@@ -110,12 +115,30 @@
                                           </td>
 
                      <td>
+
+
+
+
+  <?php if ($utilisateur->etat==0){ ?>
+            <a href="/utilisateur/bloquer?id=<?=$utilisateur->id?>&etat=1" class="text-success"><i class="bi bi-person-check-fill text-success"></i>&nbsp;Débloqué</a>
+                                                <?php } else { ?>
+            <a href="/utilisateur/bloquer?id=<?=$utilisateur->id?>&etat=0" class="text-secondary"><i  class="bi bi-person-x-fill text-secondary"></i>&nbsp;bloqué</a>
+                                                <?php }?>
+
+
+
+
+
+     <!--                
 <label class="toggle-switch" >
+
+
 <input type="checkbox" class="toggle-switch-input" >
+
 <span class="toggle-switch-label">
 <span class="toggle-switch-indicator"></span>
 </span>
-</label>
+</label>-->
 </td>
                                       
                                     </tr>

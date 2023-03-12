@@ -30,7 +30,7 @@
                               <div class="col-md-5 mb-3" style="margin-right: 20px;">
                                  <label for="validationCustom04" for="val-suggestions">Image</label>
                                  <input type="file" class="form-control" id="validationCustom04" id="fileToUpload" name="fileToUpload" 
-                                            accept="image/gif, image/jpeg, image/jpg, image/png" required>
+                                            accept="image/gif, image/jpeg, image/jpg, image/png" >
                                  <div class="invalid-feedback">
                                     Vous devez saisir le prix.
                                  </div>

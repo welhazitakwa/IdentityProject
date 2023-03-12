@@ -66,9 +66,19 @@ class specialite{
 		move_uploaded_file($file_loc,$target_file); // mv tmpfile dossier/nexnamefile
 		
 		
-		
+
+if ($_FILES['fileToUpload']['error'] == 4 || ($_FILES['fileToUpload']['size'] == 0 && $_FILES['fileToUpload']['error'] == 0))
+{	$specialite = $_POST['specialite'];
+    // cover_image is empty (and not an error), or no file was uploaded
+}else{
 		$specialite = $_POST['specialite'];
 		$specialite['image']=$final_file;
+}
+
+
+
+		
+	
 		
 
 		$this->specialitesTable->save($specialite);

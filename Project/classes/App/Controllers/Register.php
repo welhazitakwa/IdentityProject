@@ -144,6 +144,15 @@ class Register {
 
 	}
 
+	public function bloquer(){
+		
+		$utilisateur['id'] = $_GET['id'];
+		$utilisateur['etat'] = $_GET['etat'];
+		
+		$this->utilisateursTable->save($utilisateur);
+		header('location: /doctor/listall');
+	}
+
 	// public function permissions() {
 
 		// $utilisateur = $this->utilisateursTable->findById($_GET['id']);
