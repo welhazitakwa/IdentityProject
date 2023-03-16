@@ -5,7 +5,7 @@
                <div class="page-header">
                   <div class="row align-items-center">
                      <div class="col-md-12 d-flex justify-content-end">
-                        <div class="doc-badge me-3">patients <span class="ms-1"> <?=$count;?> </span></div>
+                        <div class="doc-badge me-3">Liste des patients <span class="ms-1"> <?=$count;?> </span></div>
                         <!--<a href="/patient/edit?idspc=<?= $_GET['idspc'];?>"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouveau</a>-->
                      </div>
                   </div>
