@@ -41,29 +41,32 @@ if(isset ($_POST['ok'])) :
       endif;
    
    else:
-?> <div class="alert alert-danger" role="alert">
-  Verifier votre login ou votre mot de passe !
+?> 
+
+<div class="alert alert-danger" role="alert">
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Vous devez vérifier vos donées !
 </div>   <?php  endif;endif;?></p>
 
                      <form action="/login" method='post'>
                         <div class="form-group form-focus">
                            <input type="text" id='login' name='login' class="form-control floating" >
-                           <label class="focus-label">Enter login</label>
+                           <label class="focus-label">Entrer votre login</label>
                         </div>
                         <div class="form-group form-focus">
                            <input type="password" id='password' name='password' class="form-control floating" >
-                           <label class="focus-label">Enter Password</label>
+                           <label class="focus-label">Entrer votre mot de passe</label>
                         </div>
                         <div class="form-group">
                            <div class="row">
                               <div class="col-6">
+                                 <!--
                                  <label class="custom_check mr-2 mb-0 d-inline-flex"> Remember me
                                  <input type="checkbox" name="radio">
                                  <span class="checkmark"></span>
-                                 </label>
+                                 </label>-->
                               </div>
                               <div class="col-6 text-end">
-                                 <a class="forgot-link" href="forgot-password.html">Forgot Password ?</a>
+                               <!--  <a class="forgot-link" href="forgot-password.html">Forgot Password ?</a>-->
                               </div>
                            </div>
                         </div>
