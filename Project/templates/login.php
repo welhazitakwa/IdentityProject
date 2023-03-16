@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-      <title>Doccure - Login</title>
+      <title> Login</title>
       <link rel="shortcut icon" type="image/x-icon" href="/back/img/favicon.png">
       <link rel="stylesheet" href="/back/css/bootstrap.min.css">
       <link rel="stylesheet" href="/back/css/feather.css">
@@ -31,7 +33,18 @@
                         <img src="/back/img/logo.png" class="img-fluid" alt="Logo">
                      </div>
                      <h3>Login</h3>
-                     <p class="account-subtitle">login to your account to continue</p>
+                     <p class="account-subtitle"><?php
+if(isset ($_POST['ok'])) :
+   if ($loggedIn):
+	   if($user->profil==1):
+		   include 'administration/index.php';
+      endif;
+   
+   else:
+?> <div class="alert alert-danger" role="alert">
+  Verifier votre login ou votre mot de passe !
+</div>   <?php  endif;endif;?></p>
+
                      <form action="/login" method='post'>
                         <div class="form-group form-focus">
                            <input type="text" id='login' name='login' class="form-control floating" >
@@ -55,7 +68,9 @@
                            </div>
                         </div>
                         <div class="d-grid">
-                           <button class="btn btn-primary" type="submit">Login </button>
+                           <button class="btn btn-primary" type="submit" name="ok">Login </button>
+
+
                         </div>
                         <div class="dont-have">Don't have an account? <a href="/register">Sign up</a></div>
                         <div class="login-or">
