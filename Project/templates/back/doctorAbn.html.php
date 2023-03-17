@@ -1,19 +1,12 @@
 
 
-
-
-
-
-
-
-
-         <div class="page-wrapper">
+          <div class="page-wrapper">
             <div class="content container-fluid">
                <div class="page-header">
                   <div class="row align-items-center">
                      <div class="col-md-12 d-flex justify-content-end">
-                        <div class="doc-badge me-3"> Nombre des spécialités <span class="ms-1"><?=$count;?></span></div>
-                        <a href="/specialite/edit"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouvelle</a>
+                        <div class="doc-badge me-3">Nombre des docteurs <span class="ms-1"> <?=$count;?> </span></div>
+                        <!--<a href="/doctor/edit?idspc=<?= $_GET['idspc'];?>"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouveau</a>-->
                      </div>
                   </div>
                </div>
@@ -23,11 +16,11 @@
                         <div class="card-header border-bottom-0">
                            <div class="row align-items-center">
                               <div class="col">
-                                 <h5 class="card-title">Liste des spécialités</h5>
+                                 <h5 class="card-title">Liste des docteurs de l'abonnement : <?=$abonnement->titre?> </h5>
                               </div>
                               <div class="col-auto d-flex flex-wrap">
                                  <div class="form-custom me-2">
-                                    <div id="tableSearch" class="dataTables_wrapper"></div>
+                                    <div id="tableSearch" class="dataTables_wrapper" ></div>
                                  </div>
                                  <div class="SortBy">
                                     <div class="selectBoxes order-by">
@@ -65,46 +58,57 @@
                            <div class="table-responsive">
                               <table class="datatable table table-borderless hover-table" id="data-table">
                                  <thead class="thead-light">
-                                    <tr>
-                                      
-                                       <th>Spécialité</th>
-                                       <th style="width:15%;">Action</th>
+                                    <tr>  
+                                          <th>Nom</th>
+                                          <th>Membre Depuis</th>
+                                          
+                                          
                                     </tr>
                                  </thead>
                                  <tbody>
-                                 <?php foreach ($specialites as $specialite):
-                                              // if($user->id==$specialite->iduser):
+                                 <?php foreach ($doctors as $doctor):
+                                          if($_GET['idabn_idx']==$doctor->idabn_idx):
+                                              foreach ($utilisateurs as $utilisateur):
+                                               if($utilisateur->id==$doctor->iduser):
                                       ?>
                                     <tr>
 
-                                   
+                                    <td>
+                                           
+                                          <h2 class="table-avatar">
+                <a class="avatar-pos" href="#" data-bs-target="#doctorlist" data-bs-toggle="modal">
+                 <img class="avatar avatar-img" src="/img_utilisateurs/<?=$utilisateur->avatar?>" alt="Image non disponible"></a>
+                <a href="#" data-bs-target="#doctorlist" data-bs-toggle="modal" class="user-name">Dr. <?=$utilisateur->nom?></a>
+                </h2>
                                           
-                                        
-                                          <td style="margin-left:150px;">
-                                             <h2 class="table-avatar">
-                                             <img src='/img_spc/<?=$specialite->image?>' class="spl-img"  >
-                                          <span><?=$specialite->nom?></span>
-                                              </h2>
-                                       </td>
-
-                                          <td> 
-                                              <div class="actions">
-                                                <a href="/doctor/list?idspc=<?=$specialite->id?>" class="text-dark"><i class="feather-users"></i> Docteurs</a>
-                                                  <a href="/specialite/edit?id=<?=$specialite->id?>" class="text-dark"><i class="feather-edit-3 me-1"></i>Modifier</a>
-                                                  <a href="/specialite/delete?id=<?=$specialite->id?>" onClick="return(confirm('Voulez-vous sur supprimer cette specialites?'))" class="text-danger"><i class="feather-trash-2 me-1"></i>Supprimer</a>
-                                              </div>
                                           </td>
+
+                                       
+
+                                         <td><span class="user-name">
+                                          <?php $var = $utilisateur->date_ins;
+                                        echo date("d F Y", strtotime($var) ); ?>
+                                          <!-- </span><span class="d-block"><?=$utilisateur->date_ins ?></span></td>-->
+                                           
+
+                                          <!--<td><?=$doctor->id?></td>
+                                          <td><?=$utilisateur->nom?></td>
+                                          <td><?=$utilisateur->prenom?></td>
+                                          <td><?=$doctor->experience?></td>-->
+                                          
 
 
                                       
                                     </tr>
 
                                     <?php 
-                                      // endif;
-                                  endforeach; 
+                                    endif;
+                                 endforeach;
+                              endif;
+                           endforeach;
+                                    
                                   ?>
                                     
-                                  
                                  </tbody>
                               </table>
                            </div>
@@ -115,13 +119,3 @@
                </div>
             </div>
          </div>
-
-
-
-
-
-
-
-
-
-

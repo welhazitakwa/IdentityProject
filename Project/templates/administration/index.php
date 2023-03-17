@@ -153,7 +153,7 @@
                      </div>
                      <a class="dropdown-item" href="/profil"><i class="feather-user me-1"></i> Mon profil</a>
                      <a class="dropdown-item" href ="/editprofil?id=<?=$user->id;?>"><i class="feather-edit me-1"></i> Modifier Mon Profile</a>
-                     <a class="dropdown-item" href="account-settings.html"><i class="feather-sliders me-1"></i> Paramètres</a>
+                     <!--<a class="dropdown-item" href="account-settings.html"><i class="feather-sliders me-1"></i> Paramètres</a>-->
                      <hr class="my-0 ms-2 me-2">
                      <a class="dropdown-item" href="logout"><i class="feather-log-out me-1"></i> Se Déconnecter</a>
                   </div>
@@ -194,8 +194,8 @@
                         <!--<a href="transaction.html"><i class="feather-credit-card"></i> <span>Transactions</span></a>-->
                      </li>
                      <li>
-                        <a href="settings.html"><i class="feather-sliders"></i> <span>Paramètres</span></a>
-                     </li>
+                        <!--<a href="settings.html"><i class="feather-sliders"></i> <span>Paramètres</span></a>
+                     </li>-->
                      <!--<li class="submenu">
                         <a href="#"><i class="feather-file-text"></i> <span> Reports</span> <span class="menu-arrow"></span></a>
                         <ul>

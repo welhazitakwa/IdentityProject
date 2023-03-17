@@ -45,7 +45,7 @@ class mapRoutes implements \AIFrame\Routes {
 		$produitController = new \App\Controllers\produit($this->produitsTable,$this->utilisateursTable,$this->authentication);
 	    $abonnementController = new \App\Controllers\abonnement($this->abonnementsTable,$this->utilisateursTable,$this->authentication);
 		$specialiteController = new \App\Controllers\specialite($this->specialitesTable,$this->utilisateursTable,$this->authentication);
-		$doctorController = new \App\Controllers\doctor($this->doctorsTable,$this->specialitesTable,$this->utilisateursTable,$this->authentication);
+		$doctorController = new \App\Controllers\doctor($this->doctorsTable,$this->specialitesTable,$this->abonnementsTable,$this->utilisateursTable,$this->authentication);
 
 		$patientController = new \App\Controllers\patient($this->patientsTable,$this->utilisateursTable,$this->authentication);
 
@@ -320,6 +320,13 @@ class mapRoutes implements \AIFrame\Routes {
 				'GET' => [
 					'controller' => $doctorController,
 					'action' => 'listAll'
+				],
+				'login' => true
+			],
+			'doctor/listabn' => [
+				'GET' => [
+					'controller' => $doctorController,
+					'action' => 'listAbn'
 				],
 				'login' => true
 			],

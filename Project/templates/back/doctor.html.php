@@ -5,7 +5,7 @@
                <div class="page-header">
                   <div class="row align-items-center">
                      <div class="col-md-12 d-flex justify-content-end">
-                        <div class="doc-badge me-3">doctors <span class="ms-1"> <?=$count;?> </span></div>
+                        <div class="doc-badge me-3">Nombre des docteurs <span class="ms-1"> <?=$count;?> </span></div>
                         <!--<a href="/doctor/edit?idspc=<?= $_GET['idspc'];?>"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouveau</a>-->
                      </div>
                   </div>
@@ -16,7 +16,7 @@
                         <div class="card-header border-bottom-0">
                            <div class="row align-items-center">
                               <div class="col">
-                                 <h5 class="card-title">liste des docteurs dans la sepécialité :<?=$specialite->nom?> </h5>
+                                 <h5 class="card-title">Liste des docteurs dans la sepécialité :<?=$specialite->nom?> </h5>
                               </div>
                               <div class="col-auto d-flex flex-wrap">
                                  <div class="form-custom me-2">
@@ -60,9 +60,9 @@
                                  <thead class="thead-light">
                                     <tr>  
                                           <th>ID</th>
-                                          <th>nom</th>
-                                          <th>prenom</th>
-                                          <th>experience</th>
+                                          <th>Nom</th>
+                                          <th>Prenom</th>
+                                          <th>Experience</th>
                                           <th width="100">Action</th> 
                                           
                                     </tr>

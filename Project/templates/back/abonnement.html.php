@@ -5,7 +5,7 @@
                <div class="page-header">
                   <div class="row align-items-center">
                      <div class="col-md-12 d-flex justify-content-end">
-                        <div class="doc-badge me-3"><B> Total des abonnements</B> <span class="ms-1"><?=$count;?></span></div>
+                        <div class="doc-badge me-3"> Nombre des abonnements <span class="ms-1"><?=$count;?></span></div>
                         <a href="/abonnement/edit"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouveau</a>
                      </div>
                   </div>
@@ -66,7 +66,7 @@
                                           <th>Prix</th>
                                           <th>Durée</th>
                                           <th style="width:9%;" >  &emsp;Visibilité</th>
-                                          <th style="width:15%;">&emsp; Actions</th>
+                                          <th style="width:15%;">&emsp;&emsp;&emsp;&emsp;&emsp; Actions</th>
                                             
 
                                     </tr>
@@ -103,16 +103,23 @@
 
 <td style="margin-right:30px;">
        <div class="actions">
+
          <?php if ($abonnement->etat==0){ ?>
             <a href="/abonnement/publier?id=<?=$abonnement->id?>&etat=1" class="text-success"><i class="feather-eye me-1 text-success"></i>Publier</a>
                                                 <?php } else { ?>
             <a href="/abonnement/publier?id=<?=$abonnement->id?>&etat=0" class="text-secondary"><i class="text-secondary feather-eye-off me-1"></i>Depublier</a>
                                                 <?php }?>
 </td>
-         <td>                                       
+         <td>      
+            
+         <a href="/doctor/listabn?idabn_idx=<?=$abonnement->id?>" class="text-info"><i class="feather-users"></i> Docteurs &emsp;</a>
+            
+         
+
     <a href="/abonnement/edit?id=<?=$abonnement->id?>" class="text-dark">
     <i class="feather-edit-3"></i> Modifier &emsp;</a>
-    <a href="/abonnement/delete?id=<?=$abonnement->id?>" onClick="return(confirm('Voulez-vous sur supprimer cette abonnements?'))" class="text-danger"><i class="feather-trash-2 me-1"></i>Supprimer</a>
+
+    <a href="/abonnement/delete?id=<?=$abonnement->id?>" onClick="return(confirm('Voulez-vous sur supprimer cette abonnements?'))" class="text-danger"><i class="feather-trash-2 me-1"></i> Supprimer</a>
          </td>
 
   </div>
