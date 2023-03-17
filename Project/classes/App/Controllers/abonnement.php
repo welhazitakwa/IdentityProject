@@ -30,7 +30,7 @@ class abonnement{
 		}
 		
 		$user = $this->authentication->getUser();
-		$title = 'Traitement :: abonnement';
+		$title = 'abonnement ';
 		return ['template' => 'back/editabonnement.html.php',
 				'title' => $title,
 				'variables' => [
@@ -69,7 +69,7 @@ class abonnement{
 
 		$user = $this->authentication->getUser();
 
-		$title = 'Liste :: abonnements';
+		$title = 'Liste abonnements';
 		return ['template' => 'back/abonnement.html.php',
 				'title' => $title,
 				'variables' => [

@@ -38,7 +38,7 @@ class appointment{
 		}
 		
 		$user = $this->authentication->getUser();
-		$title = 'Traitement :: appointment';
+		$title = 'Rendez-vous';
 		return ['template' => 'back/editappointment.html.php',
 				'title' => $title,
 				'variables' => [
@@ -80,7 +80,7 @@ class appointment{
 		$user = $this->authentication->getUser();
 
 
-		$title = 'Liste :: appointments';
+		$title = 'Liste Rendez-vous';
 		return ['template' => 'back/appointment.html.php',
 				'title' => $title,
 				'variables' => [
