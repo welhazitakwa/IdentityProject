@@ -5,7 +5,7 @@
                <div class="page-header">
                   <div class="row align-items-center">
                      <div class="col-md-12 d-flex justify-content-end">
-                        <div class="doc-badge me-3">Liste des patients <span class="ms-1"> <?=$count;?> </span></div>
+                        <div class="doc-badge me-3">Nombre des patients <span class="ms-1"> <?=$count;?> </span></div>
                         <!--<a href="/patient/edit?idspc=<?= $_GET['idspc'];?>"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouveau</a>-->
                      </div>
                   </div>
@@ -16,7 +16,7 @@
                         <div class="card-header border-bottom-0">
                            <div class="row align-items-center">
                               <div class="col">
-                                 <h5 class="card-title">Patients </h5>
+                                 <h5 class="card-title">Liste des patients </h5>
                               </div>
                               <div class="col-auto d-flex flex-wrap">
                                  <div class="form-custom me-2">
@@ -59,11 +59,9 @@
                               <table class="datatable table table-borderless hover-table" id="data-table">
                                  <thead class="thead-light">
                                     <tr>  
-                                          <th>ID</th>
-                                          
                                           <th>Patient</th>
-                                          <th>profession</th>
-                                          <th width="100">Action</th> 
+                                          <th width="40%">Profession</th>
+                                          <th width="15%">Action</th> 
                                           
                                     </tr>
                                  </thead>
@@ -74,7 +72,6 @@
                                         if($utilisateur->id==$patient->iduserP):
                                       ?>
                                     <tr>
-                                          <td><?=$patient->id?></td>
 
 
 

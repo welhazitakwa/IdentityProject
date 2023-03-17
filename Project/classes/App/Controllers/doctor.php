@@ -7,6 +7,7 @@ use \AIFrame\Authentication;
 class doctor{
 	private $doctorsTable;
 	private $specialitesTable;
+	private $abonnementsTable;
 	private $utilisateursTable;
 	private $authentication;
 	
@@ -16,12 +17,14 @@ class doctor{
 		     
 							\AIFrame\DatabaseTable $doctorsTable,
 							\AIFrame\DatabaseTable $specialitesTable,
+							\AIFrame\DatabaseTable $abonnementsTable,
 							\AIFrame\DatabaseTable $utilisateursTable,
 							\AIFrame\Authentication $authentication
 		){
 		
 		$this->doctorsTable = $doctorsTable;
 		$this->specialitesTable = $specialitesTable;
+		$this->abonnementsTable = $abonnementsTable;
 		$this->utilisateursTable = $utilisateursTable;
 		$this->authentication = $authentication;
 	}
@@ -72,6 +75,7 @@ class doctor{
 		$doctors = $this->doctorsTable->findAll();
 		$count = $this->doctorsTable->total();
 		$specialite = $this->specialitesTable->findById($_GET['idspc']);
+		$abonnement = $this->abonnementsTable->findById($_GET['idabn_idx']);
 		$utilisateurs = $this->utilisateursTable->findAll();
 
 		$user = $this->authentication->getUser();
@@ -83,6 +87,7 @@ class doctor{
 				'variables' => [
 					'doctors' => $doctors,
 					'specialite' => $specialite,
+					'abonnement' => $abonnement,
      'utilisateurs' => $utilisateurs,
      'count' => $count,
      'user' => $user
@@ -90,6 +95,44 @@ class doctor{
 					]
 				];
 	}
+
+
+		public function listAbn(){
+		
+		$doctors = $this->doctorsTable->findAll();
+		$count = $this->doctorsTable->total();
+		//$specialite = $this->specialitesTable->findById($_GET['idspc']);
+		$abonnement = $this->abonnementsTable->findById($_GET['idabn_idx']);
+		$utilisateurs = $this->utilisateursTable->findAll();
+
+		$user = $this->authentication->getUser();
+
+
+		$title = 'Liste :: doctors';
+		return ['template' => 'back/doctorAbn.html.php',
+				'title' => $title,
+				'variables' => [
+					'doctors' => $doctors,
+					//'specialite' => $specialite,
+					'abonnement' => $abonnement,
+     'utilisateurs' => $utilisateurs,
+     'count' => $count,
+     'user' => $user
+					
+					]
+				];
+	}
+
+
+
+
+
+
+
+
+
+
+
 	public function listAll(){
 		
 		$doctors = $this->doctorsTable->findAll();
