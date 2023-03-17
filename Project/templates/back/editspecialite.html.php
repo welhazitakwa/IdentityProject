@@ -5,7 +5,7 @@
    <div class="page-header">
       <div class="row">
          <div class="col-sm-12">
-            <h3 class="page-title">Abonnement</h3>
+            <h3 class="page-title">Spécialité</h3>
          </div>
       </div>
    </div>
@@ -46,7 +46,7 @@
                            <div class="text-end" style="margin-top: 15px;">
                            
                            <button class="btn btn-primary" type="submit">Sauvegarder</button>
-                           <button class="btn btn-secondary" style="margin-right:6px;">Annuler</button>
+                           <button class="btn btn-secondary" type="reset" style="margin-right:6px;">Annuler</button>
 </div>
                         </form>
                      </div>

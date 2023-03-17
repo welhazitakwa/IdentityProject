@@ -63,7 +63,7 @@
                            
                            <div class="text-end" style="margin-top: 15px;">
                         <button type="submit" class="btn btn-primary" style="margin-right: 5px;">Enregistrer </button>
-                        <button class="btn btn-secondary" style="margin-right:6px;">Annuler</button>
+                        <button class="btn btn-secondary" type="reset" style="margin-right:6px;">Annuler</button>
                         
                      </div>
                         </form>
