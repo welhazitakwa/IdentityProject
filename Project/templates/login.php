@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-      <title>Doccure - Login</title>
+      <title> Login</title>
       <link rel="shortcut icon" type="image/x-icon" href="/back/img/favicon.png">
       <link rel="stylesheet" href="/back/css/bootstrap.min.css">
       <link rel="stylesheet" href="/back/css/feather.css">
@@ -31,31 +33,47 @@
                         <img src="/back/img/logo.png" class="img-fluid" alt="Logo">
                      </div>
                      <h3>Login</h3>
-                     <p class="account-subtitle">login to your account to continue</p>
+                     <p class="account-subtitle"><?php
+if(isset ($_POST['ok'])) :
+   if ($loggedIn):
+	   if($user->profil==1):
+		   include 'administration/index.php';
+      endif;
+   
+   else:
+?> 
+
+<div class="alert alert-danger" role="alert">
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Vous devez vérifier vos donées !
+</div>   <?php  endif;endif;?></p>
+
                      <form action="/login" method='post'>
                         <div class="form-group form-focus">
                            <input type="text" id='login' name='login' class="form-control floating" >
-                           <label class="focus-label">Enter login</label>
+                           <label class="focus-label">Entrer votre login</label>
                         </div>
                         <div class="form-group form-focus">
                            <input type="password" id='password' name='password' class="form-control floating" >
-                           <label class="focus-label">Enter Password</label>
+                           <label class="focus-label">Entrer votre mot de passe</label>
                         </div>
                         <div class="form-group">
                            <div class="row">
                               <div class="col-6">
+                                 <!--
                                  <label class="custom_check mr-2 mb-0 d-inline-flex"> Remember me
                                  <input type="checkbox" name="radio">
                                  <span class="checkmark"></span>
-                                 </label>
+                                 </label>-->
                               </div>
                               <div class="col-6 text-end">
-                                 <a class="forgot-link" href="forgot-password.html">Forgot Password ?</a>
+                               <!--  <a class="forgot-link" href="forgot-password.html">Forgot Password ?</a>-->
                               </div>
                            </div>
                         </div>
                         <div class="d-grid">
-                           <button class="btn btn-primary" type="submit">Login </button>
+                           <button class="btn btn-primary" type="submit" name="ok">Login </button>
+
+
                         </div>
                         <div class="dont-have">Don't have an account? <a href="/register">Sign up</a></div>
                         <div class="login-or">
