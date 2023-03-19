@@ -54,8 +54,11 @@
 								    <input type="hidden"  name="utilisateur[profil]" value="1" >
 								    <input type="hidden"  name="utilisateur[permissions]" value="0" >
 								    <input type="hidden"  name="utilisateur[avatar]" value="default.png" >
-								    <input type="hidden"  name="utilisateur[date_ins]" value="<?=date('d/m/Y')?>" >
-									<!-- basic input -->
+								<input type="hidden"  name="utilisateur[date_ins]" value="<?=date('d/m/Y')?>" >
+							<input type="hidden"  name="utilisateur[createdAt]" value="<?=date('d/m/Y')?>" >
+							<input type="hidden"  name="utilisateur[updatedAt]" value="<?=date('d/m/Y')?>" >
+								
+                        <!-- basic input -->
 
                         <div class="form-group form-focus">
                            <input type="text" class="form-control floating" name="utilisateur[login]">
