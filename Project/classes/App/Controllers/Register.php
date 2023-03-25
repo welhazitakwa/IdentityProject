@@ -26,6 +26,7 @@ class Register {
 	}
 
 	public function registrationForm() {
+
 		return ['template' => 'layout.html.php', 
 				'title' => 'Register an account'];
 	}
@@ -45,7 +46,10 @@ class Register {
 				   ]; 
 		}
 		else {
-			$utilisateur['password'] = password_hash($utilisateur['password'], PASSWORD_DEFAULT);
+		$utilisateur['password'] = password_hash($utilisateur['password'], PASSWORD_DEFAULT);
+		$date = date_create(date('Y-m-d')); 
+		$utilisateur['updatedAt']= date_format($date, 'Y-m-d H:i:s');
+		$utilisateur['createdAt']= date_format($date, 'Y-m-d H:i:s');
 			$this->utilisateursTable->save($utilisateur);
 			session_start();
 			session_regenerate_id();
@@ -82,6 +86,7 @@ class Register {
 		
 		if (isset($_GET['id'])){
 			$utilisateur = $this->utilisateursTable->findById($_GET['id']);
+
 		}
 		
 		$user = $this->authentication->getUser();
@@ -101,7 +106,7 @@ class Register {
 		}
 		
 		$user = $this->authentication->getUser();
-		$title = 'Traitement :: edit';
+		$title = 'edit';
 		return ['template' => 'back/editprofile.html.php',
 				'title' => $title,
 				'variables' => [
@@ -131,17 +136,20 @@ class Register {
 		move_uploaded_file($file_loc,$target_file); // mv tmpfile dossier/nexnamefile
 			
 		if ($_FILES['fileToUpload']['error'] == 4 || ($_FILES['fileToUpload']['size'] == 0 && $_FILES['fileToUpload']['error'] == 0))
-{$utilisateur = $_POST['utilisateur'];
+{
+		
+	$utilisateur = $_POST['utilisateur'];
+	$date = date_create(date('Y-m-d')); 
+	$utilisateur['updatedAt']= date_format($date, 'Y-m-d H:i:s');
     // cover_image is empty (and not an error), or no file was uploaded
 }else{
 	$utilisateur = $_POST['utilisateur'];
 		$utilisateur['avatar']=$final_file;
-}
+		$date = date_create(date('Y-m-d')); 
+		$utilisateur['updatedAt']= date_format($date, 'Y-m-d H:i:s');
+		}
 		$this->utilisateursTable->save($utilisateur);
 		header('location: /editprofil?id='.$_GET['id'].'&msg=1');
-
-		
-
 	}
 
 	public function bloquer(){
