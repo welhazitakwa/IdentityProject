@@ -1,19 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -55,14 +39,8 @@
 								    <input type="hidden"  name="utilisateur[permissions]" value="0" >
 								    <input type="hidden"  name="utilisateur[avatar]" value="default.png" >
 								<input type="hidden"  name="utilisateur[date_ins]" value="<?=date('d/m/Y')?>" >
-			<input type="hidden"  name="utilisateur[createdAt]" value="<?php
-               $date = date_create(date('Y-m-d'));
-               echo date_format($date, 'Y-m-d H:i:s'); ?> " 
-         >
-			<input type="hidden"  name="utilisateur[updatedAt]" value="<?php
-$date = date_create(date('Y-m-d'));
-echo date_format($date, 'Y-m-d H:i:s');
-?>" >
+
+
 								
                         <!-- basic input -->
 
