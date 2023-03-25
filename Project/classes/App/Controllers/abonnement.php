@@ -43,8 +43,20 @@ class abonnement{
 //--------Enregistrement de données---------//
 
 	public function saveEdit(){
-		
+				if (isset($_GET['id'])){
+
+	$abonnement = $_POST['abonnement'];
+	$date = date_create(date('Y-m-d')); 
+	$abonnement['updatedAt']= date_format($date, 'Y-m-d H:i:s');
+  
+		}else {
 		$abonnement = $_POST['abonnement'];
+		$date = date_create(date('Y-m-d')); 
+		$abonnement['updatedAt']= date_format($date, 'Y-m-d H:i:s');
+		$abonnement['createdAt']= date_format($date, 'Y-m-d H:i:s');
+	
+		}
+
 		$this->abonnementsTable->save($abonnement);
 		header('location: /abonnement/list');
 	}
@@ -52,10 +64,8 @@ class abonnement{
 
 
 		public function publier(){
-		
 		$abonnement['id'] = $_GET['id'];
 		$abonnement['etat'] = $_GET['etat'];
-		
 		$this->abonnementsTable->save($abonnement);
 		header('location: /abonnement/list');
 	}

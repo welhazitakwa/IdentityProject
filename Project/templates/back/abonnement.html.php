@@ -105,9 +105,9 @@
        <div class="actions">
 
          <?php if ($abonnement->etat==0){ ?>
-            <a href="/abonnement/publier?id=<?=$abonnement->id?>&etat=1" class="text-success"><i class="feather-eye me-1 text-success"></i>Publier</a>
+            <a href="/abonnement/publier?id=<?=$abonnement->id?>&etat=1" class="text-success"><i class="feather-eye me-1 text-success"></i>Publié</a>
                                                 <?php } else { ?>
-            <a href="/abonnement/publier?id=<?=$abonnement->id?>&etat=0" class="text-secondary"><i class="text-secondary feather-eye-off me-1"></i>Depublier</a>
+            <a href="/abonnement/publier?id=<?=$abonnement->id?>&etat=0" class="text-secondary"><i class="text-secondary feather-eye-off me-1"></i>Depublié</a>
                                                 <?php }?>
 </td>
          <td>      

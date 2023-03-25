@@ -15,14 +15,7 @@
                   <div class="row">
                      <div class="col-sm">
                         <form class="needs-validation" novalidate method='post' enctype="multipart/form-data">
-                           <input type="hidden"  name="abonnement[createdAt]" value="<?php
-                                          $date = date_create(date('Y-m-d'));
-                                          echo date_format($date, 'Y-m-d H:i:s'); ?> " 
-                                    >
-                                    <input type="hidden"  name="abonnement[updatedAt]" value="<?php
-                           $date = date_create(date('Y-m-d'));
-                           echo date_format($date, 'Y-m-d H:i:s');
-                           ?>" >
+                         
 
 
                            <input type="hidden" name="abonnement[id]" value="<?=$abonnement->id ?? ''?>">
