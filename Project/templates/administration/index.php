@@ -32,32 +32,7 @@
                <i class="feather-chevrons-left"></i>
                </a>
             </div>
-            <div class="top-nav-search">
-               <div class="main">
-                  <form class="search" method="post" action="https://doccure.dreamguystech.com/html/template/admin/index.html">
-                     <div class="s-icon"><i class="fas fa-search"></i></div>
-                     <input type="text" class="form-control" placeholder="Start typing your Search..." />
-                     <ul class="results">
-                        <li>
-                           <h6><i class="feather-calendar me-1"></i> Appointments</h6>
-                           <p>No matched Appointment found. <a href="index.html"><span>View all</span></a></p>
-                        </li>
-                        <li>
-                           <h6><i class="feather-calendar me-1"></i> Specialities</h6>
-                           <p>No matched Appointment found. <a href="index.html"><span>View all</span></a></p>
-                        </li>
-                        <li>
-                           <h6><i class="feather-user me-1"></i> Doctors</h6>
-                           <p>No matched Appointment found. <a href="index.html"><span>View all</span></a></p>
-                        </li>
-                        <li>
-                           <h6><i class="feather-users me-1"></i> Patients</h6>
-                           <p>No matched Appointment found. <a href="index.html"><span>View all</span></a></p>
-                        </li>
-                     </ul>
-                  </form>
-               </div>
-            </div>
+
             <a class="mobile_btn" id="mobile_btn">
             <i class="fas fa-bars"></i>
             </a>
@@ -67,7 +42,7 @@
                   <i class="feather-sun light-mode"></i><i class="feather-moon dark-mode"></i>
                   </a>
                </li>
-               <li class="nav-item dropdown noti-nav">
+             <!--   <li class="nav-item dropdown noti-nav">
                   <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
                   <i class="feather-bell"></i> <span class="badge"></span>
                   </a>
@@ -133,7 +108,7 @@
                         </ul>
                      </div>
                   </div>
-               </li>
+               </li> -->
                <li class="nav-item dropdown main-drop">
                   <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
                   <span class="user-img">

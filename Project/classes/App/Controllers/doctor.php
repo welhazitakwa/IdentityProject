@@ -162,7 +162,8 @@ class doctor{
 	public function delete(){
 		
 		$this->doctorsTable->delete($_GET['id']);
-		header('location: /doctor/list?idspc='.$_GET['idspc']);
+		header('location: /doctor/listall');
+	//	header('location: /doctor/list?idspc='.$_GET['idspc']);
 	}
 
 }
