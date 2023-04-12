@@ -20,7 +20,7 @@
                                  <div class="form-custom me-2">
                                     <div id="tableSearch" class="dataTables_wrapper" ></div>
                                  </div>
-                                 <div class="SortBy">
+                                 <!-- <div class="SortBy">
                                     <div class="selectBoxes order-by">
                                        <p class="mb-0"><img src="/back/img/icon/sort.png" class="me-2" alt="icon"> Filter par </p>
                                        <span class="down-icon"><i class="feather-chevron-down"></i></span>
@@ -48,7 +48,7 @@
                                           <button type="submit" class="btn w-100 btn-primary">Apply</button>
                                        </form>
                                     </div>
-                                 </div>
+                                 </div> -->
                               </div>
                            </div>
                         </div>
@@ -61,7 +61,7 @@
                                           <th>Docteur</th>
                                           <th>Maladie</th>
                                           <th>Date & Heure</th>
-                                          <th width="100">Prix</th> 
+                                          <!-- <th width="100">Prix</th>  -->
                                           
                                     </tr>
                                  </thead>
@@ -107,17 +107,17 @@
 
                                           <td><?=$appointment->maladie?></td>
                                           <td><?=$appointment->dateRendezVous?></td>
-                                          <td> 
+                                          <!-- <td> 
 
 
 
  
                                                  <!-- <a href="/appointment/delete?id=<?=$appointment->id?>" onClick="return(confirm('Voulez-vous sur supprimer cette appointments?'))" class="text-danger"><i class="feather-trash-2 me-1"></i>Supprimer</a>-->
 
-                                                 <?=$appointment->prix?>
+                                            <!--     <?=$appointment->prix?>
                                               </div>
                                           </td>
-
+ -->
 
                                       
                                     </tr>

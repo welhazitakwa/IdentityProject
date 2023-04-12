@@ -29,7 +29,7 @@
                                  <div class="form-custom me-2">
                                     <div id="tableSearch" class="dataTables_wrapper"></div>
                                  </div>
-                                 <div class="SortBy">
+                                 <!-- <div class="SortBy">
                                     <div class="selectBoxes order-by">
                                        <p class="mb-0"><img src="/back/img/icon/sort.png" class="me-2" alt="icon"> Filter par </p>
                                        <span class="down-icon"><i class="feather-chevron-down"></i></span>
@@ -57,7 +57,7 @@
                                           <button type="submit" class="btn w-100 btn-primary">Apply</button>
                                        </form>
                                     </div>
-                                 </div>
+                                 </div> -->
                               </div>
                            </div>
                         </div>

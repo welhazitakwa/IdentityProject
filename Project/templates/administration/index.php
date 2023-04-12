@@ -139,9 +139,9 @@
             <div class="sidebar-inner slimscroll">
                <div id="sidebar-menu" class="sidebar-menu">
                   <ul>
-                     <li class="menu-title"><span>Main</span></li>
+                     <li class="menu-title"><span></span></li>
                      <li class="active">
-                        <a href="/"><i class="feather-grid"></i> <span>Dashboard</span></a>
+                        <a href="/"><i class="feather-grid"></i> <span>Tableau de bord</span></a>
                      </li>
                      <li>
                         <!--<a href="/categorie/list"><i class="feather-calendar"></i> <span>Categories</span></a>-->
