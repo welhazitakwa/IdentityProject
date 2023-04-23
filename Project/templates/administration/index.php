@@ -191,6 +191,9 @@
                         <a href="/appointment/list"><i class="feather-calendar"></i> <span>Rendez-vous</span></a>
                      </li>
                      <li>
+                        <a href="/blog/list"><i class="feather-grid"></i> <span>Blog</span></a>
+                     </li>
+                     <li>
                         <!--<a href="transaction.html"><i class="feather-credit-card"></i> <span>Transactions</span></a>-->
                      </li>
                      <li>

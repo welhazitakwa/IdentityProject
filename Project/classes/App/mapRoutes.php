@@ -13,6 +13,7 @@ class mapRoutes implements \AIFrame\Routes {
 	private $doctorsTable;	
 	private $patientsTable;	
 	private $appointmentsTable;	
+	private $blogsTable;	
 	
 	
 		
@@ -31,6 +32,7 @@ class mapRoutes implements \AIFrame\Routes {
 		$this->doctorsTable = new \AIFrame\DatabaseTable($pdo, 'doctors', 'id');
 		$this->patientsTable = new \AIFrame\DatabaseTable($pdo, 'patients', 'id');
 		$this->appointmentsTable = new \AIFrame\DatabaseTable($pdo, 'appointments', 'id');
+		$this->blogsTable = new \AIFrame\DatabaseTable($pdo, 'blogs', 'id');
 	
 	
 	}
@@ -51,6 +53,8 @@ class mapRoutes implements \AIFrame\Routes {
 
 		$appointmentController = new \App\Controllers\appointment($this->appointmentsTable,$this->doctorsTable,
 		$this->patientsTable,$this->utilisateursTable,$this->authentication);
+
+		$blogController = new \App\Controllers\blog($this->blogsTable,$this->utilisateursTable,$this->authentication);
 		
 		$routes = [
 		// Home
@@ -429,6 +433,76 @@ class mapRoutes implements \AIFrame\Routes {
 					'action' => 'logout'
 				]
 			],
+
+
+
+
+						//blog
+			'blog/list' => [
+				'GET' => [
+					'controller' => $blogController,
+					'action' => 'list'
+				],
+				'login' => true
+			],
+			
+			'blog/listall' => [
+				'GET' => [
+					'controller' => $blogController,
+					'action' => 'listAll'
+				],
+				'login' => true
+			],
+			'blog/listabn' => [
+				'GET' => [
+					'controller' => $blogController,
+					'action' => 'listAbn'
+				],
+				'login' => true
+			],
+			
+			'blog/edit' => [
+				'POST' => [
+					'controller' => $blogController,
+					'action' => 'saveEdit'
+				],
+				'GET' => [
+					'controller' => $blogController,
+					'action' => 'edit'
+				],
+				'login' => true
+			],
+
+			'blog/delete' => [
+				'GET' => [
+					'controller' => $blogController,
+					'action' => 'delete'
+				],
+				'login' => true
+			],
+			'blog/logout' => [
+				'GET' => [
+					'controller' => $loginController,
+					'action' => 'logout'
+				]
+			],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			
 			
 		];
