@@ -82,10 +82,11 @@
                  <img class="avatar avatar-img" src="/img_utilisateurs/<?=$utilisateur->avatar?>" alt="Image non disponible"></a>
                 <a href="#" data-bs-target="#patientlist" data-bs-toggle="modal" class="user-name"><?=$utilisateur->nom?> <?=$utilisateur->prenom?></span> <span class="text-muted"><?=$utilisateur->genre?>, <?php
 
-            $dateNaissance = $utilisateur->dateNaissance ;
+            $dateNaissance  = date("d-m-Y", strtotime($utilisateur->dateNaissance) );
             $aujourdhui = date("Y-m-d");
             $diff = date_diff(date_create($dateNaissance), date_create($aujourdhui));
             echo $diff->format('%y');
+          
 ?> Years Old</span></a>
                 </h2>
                                           

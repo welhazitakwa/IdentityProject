@@ -22,7 +22,7 @@
       <div class="main-wrapper">
          <div class="header">
             <div class="header-left">
-               <a href="index.html" class="logo">
+               <a href="/" class="logo">
                <img src="/back/img/logo.png" alt="Logo">
                </a>
                <a href="index.html" class="logo logo-small">
@@ -42,73 +42,7 @@
                   <i class="feather-sun light-mode"></i><i class="feather-moon dark-mode"></i>
                   </a>
                </li>
-             <!--   <li class="nav-item dropdown noti-nav">
-                  <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
-                  <i class="feather-bell"></i> <span class="badge"></span>
-                  </a>
-                  <div class="dropdown-menu notifications">
-                     <div class="topnav-dropdown-header">
-                        <span class="notification-title">Notifications</span>
-                        <a href="javascript:void(0)" class="clear-noti"><i class="feather-more-vertical"></i></a>
-                     </div>
-                     <div class="noti-content">
-                        <ul class="notification-list">
-                           <li class="notification-message">
-                              <a href="#">
-                                 <div class="media d-flex">
-                                    <span class="avatar">
-                                    <img class="avatar-img" alt="" src="/back/img/profiles/avatar-02.jpg">
-                                    </span>
-                                    <div class="media-body">
-                                       <h6>Travis Tremble <span class="notification-time">18.30 PM</span></h6>
-                                       <p class="noti-details">Sent a amount of $210 for his Appointment <span class="noti-title">Dr.Ruby perin </span></p>
-                                    </div>
-                                 </div>
-                              </a>
-                           </li>
-                           <li class="notification-message">
-                              <a href="#">
-                                 <div class="media d-flex">
-                                    <span class="avatar">
-                                    <img class="avatar-img" alt="" src="/back/img/profiles/avatar-05.jpg">
-                                    </span>
-                                    <div class="media-body">
-                                       <h6>Travis Tremble <span class="notification-time">12 Min Ago</span></h6>
-                                       <p class="noti-details"> has booked her appointment to <span class="noti-title">Dr. Hendry Watt</span></p>
-                                    </div>
-                                 </div>
-                              </a>
-                           </li>
-                           <li class="notification-message">
-                              <a href="#">
-                                 <div class="media d-flex">
-                                    <div class="avatar">
-                                       <img class="avatar-img" alt="" src="/back/img/profiles/avatar-03.jpg">
-                                    </div>
-                                    <div class="media-body">
-                                       <h6>Travis Tremble <span class="notification-time">6 Min Ago</span></h6>
-                                       <p class="noti-details"> Sent a amount $210 for his Appointment <span class="noti-title">Dr.Maria Dyen</span></p>
-                                    </div>
-                                 </div>
-                              </a>
-                           </li>
-                           <li class="notification-message">
-                              <a href="#">
-                                 <div class="media d-flex">
-                                    <div class="avatar avatar-sm">
-                                       <img class="avatar-img" alt="" src="/back/img/profiles/avatar-06.jpg">
-                                    </div>
-                                    <div class="media-body">
-                                       <h6>Travis Tremble <span class="notification-time">8.30 AM</span></h6>
-                                       <p class="noti-details"> Send a message to his doctor</p>
-                                    </div>
-                                 </div>
-                              </a>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </li> -->
+          
                <li class="nav-item dropdown main-drop">
                   <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
                   <span class="user-img">
@@ -166,120 +100,10 @@
                         <a href="/appointment/list"><i class="feather-calendar"></i> <span>Rendez-vous</span></a>
                      </li>
                      <li>
-                        <!--<a href="transaction.html"><i class="feather-credit-card"></i> <span>Transactions</span></a>-->
+                       
                      </li>
                      <li>
-                        <!--<a href="settings.html"><i class="feather-sliders"></i> <span>Paramètres</span></a>
-                     </li>-->
-                     <!--<li class="submenu">
-                        <a href="#"><i class="feather-file-text"></i> <span> Reports</span> <span class="menu-arrow"></span></a>
-                        <ul>
-                           <li><a href="appointment-report.html">Appointment Report</a></li>
-                           <li><a href="income-report.html">Income Report</a></li>
-                           <li><a href="invoice-report.html">Invoice Report</a></li>
-                           <li><a href="user-reports.html">Users Report</a></li>
-                        </ul>
-                     </li>-->
-                    <!-- <li class="menu-title">
-                        <span>Pharmacy</span>
-                     </li>
-                     <li class="submenu">
-                        <a href="#"><i class="feather-file-plus"></i> <span> Pharmacies</span> <span class="menu-arrow"></span></a>
-                        <ul>
-                           <li><a href="pharmacy-list.html">All Pharmacies</a></li>
-                           <li><a href="pharmacy-category.html">Categories</a></li>
-                        </ul>
-                     </li>
-                     <li class="submenu">
-                        <a href="#"><i class="feather-shopping-cart"></i> <span> Product List</span> <span class="menu-arrow"></span></a>
-                        <ul>
-                           <li><a href="product-list.html">All Products</a></li>
-                           <li><a href="product-category.html">Categories</a></li>
-                        </ul>
-                     </li>
-                     <li class="menu-title">
-                        <span>Blog</span>
-                     </li>-->
-                    <!-- <li class="submenu">
-                        <a href="#"><i class="feather-grid"></i> <span> Blog</span> <span class="menu-arrow"></span></a>
-                        <ul>
-                           <li><a href="active-blog.html">Blogs</a></li>
-                           <li><a href="blog-details.html">Blog Details</a></li>
-                           <li><a href="add-blog.html">Add Blog</a></li>
-                           <li><a href="edit-blog.html">Edit Blog</a></li>
-                        </ul>
-                     </li>-->
-                    <!-- <li class="menu-title">
-                        <span>Pages</span>
-                     </li>
-                     <li>
-                        <a href="add-profile.html"><i class="feather-user"></i> <span>Profile</span></a>
-                     </li>
-                     <li class="submenu">
-                        <a href="#"><i class="feather-lock"></i> <span> Authentication </span> <span class="menu-arrow"></span></a>
-                        <ul>
-                           <li><a href="login.html"> Login </a></li>
-                           <li><a href="register.html"> Register </a></li>
-                           <li><a href="forgot-password.html"> Forgot Password </a></li>
-                           <li><a href="lock-screen.html"> Lock Screen </a></li>
-                        </ul>
-                     </li>
-                     <li class="submenu">
-                        <a href="#"><i class="feather-book-open"></i> <span> Error Pages </span> <span class="menu-arrow"></span></a>
-                        <ul>
-                           <li><a href="error-404.html">404 Error </a></li>
-                           <li><a href="error-500.html">500 Error </a></li>
-                        </ul>
-                     </li>
-                     <li>
-                        <a href="blank-page.html"><i class="feather-clipboard"></i> <span>Blank Page</span></a>
-                     </li>
-                     <li class="menu-title">
-                        <span>UI Interface</span>
-                     </li>
-                     <li>
-                        <a href="components.html"><i class="feather-pocket"></i> <span>Components</span></a>
-                     </li>
-                     <li class="submenu">
-                        <a href="#"><i class="feather-file-minus"></i> <span> Forms </span> <span class="menu-arrow"></span></a>
-                        <ul>
-                           <li><a href="form-basic-inputs.html">Basic Inputs </a></li>
-                           <li><a href="form-input-groups.html">Input Groups </a></li>
-                           <li><a href="form-horizontal.html">Horizontal Form </a></li>
-                           <li><a href="form-vertical.html"> Vertical Form </a></li>
-                           <li><a href="form-mask.html">Form Mask </a></li>
-                           <li><a href="form-validation.html">Form Validation </a></li>
-                        </ul>
-                     </li>
-                     <li class="submenu">
-                        <a href="#"><i class="feather-align-justify"></i> <span> Tables </span> <span class="menu-arrow"></span></a>
-                        <ul>
-                           <li><a href="tables-basic.html">Basic Tables </a></li>
-                           <li><a href="data-tables.html">Data Table </a></li>
-                        </ul>
-                     </li>
-                     <li class="submenu">
-                        <a href="javascript:void(0);"><i class="feather-life-buoy"></i> <span>Multi Level</span> <span class="menu-arrow"></span></a>
-                        <ul style="display: none;">
-                           <li class="submenu">
-                              <a href="javascript:void(0);"> <span>Level 1</span> <span class="menu-arrow"></span></a>
-                              <ul style="display: none;">
-                                 <li><a href="javascript:void(0);"><span>Level 2</span></a></li>
-                                 <li class="submenu">
-                                    <a href="javascript:void(0);"> <span> Level 2</span> <span class="menu-arrow"></span></a>
-                                    <ul style="display: none;">
-                                       <li><a href="javascript:void(0);">Level 3</a></li>
-                                       <li><a href="javascript:void(0);">Level 3</a></li>
-                                    </ul>
-                                 </li>
-                                 <li><a href="javascript:void(0);"> <span>Level 2</span></a></li>
-                              </ul>
-                           </li>
-                           <li>
-                              <a href="javascript:void(0);"> <span>Level 1</span></a>
-                           </li>
-                        </ul>
-                     </li>-->
+                       
                   </ul>
                </div>
             </div>
