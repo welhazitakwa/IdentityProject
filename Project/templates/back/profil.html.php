@@ -73,7 +73,7 @@
                         <strong><p style="color: black";>Numéro de téléphone</p></strong>
                         <p><?= $user-> tel?></p>
                      </div>
-                     <div class="col-md-6">
+                     <!-- <div class="col-md-6">
                         <strong><p style="color: black";>Liens sociaux</p></strong>
                         <ul class="social-icon">
                            <li>
@@ -92,7 +92,7 @@
                               <a href="#"><i class="feather-youtube"></i></a>
                            </li>
                         </ul>
-                     </div>
+                     </div> -->
 
                      <div class="col-md-6 mb-3">
  

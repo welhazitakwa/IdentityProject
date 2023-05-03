@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-      <title>Doccure - Login</title>
+      <title>Doccure - S'inscrire</title>
       <link rel="shortcut icon" type="image/x-icon" href="/back/img/favicon.png">
       <link rel="stylesheet" href="/back/css/bootstrap.min.css">
       <link rel="stylesheet" href="/back/css/feather.css">
@@ -30,8 +30,8 @@
                      <div class="img-logo">
                         <img src="/back/img/logo.png" class="img-fluid" alt="Logo">
                      </div>
-                     <h3>Getting Started</h3>
-                     <p class="account-subtitle">Register with email</p>
+                     <h3>Créer un compte</h3>
+                   
                      <form action="/register" method="post">
 								    <!-- basic input -->
                                     <input type="hidden"  name="utilisateur[id]" value="" >
@@ -46,7 +46,11 @@
 
                         <div class="form-group form-focus">
                            <input type="text" class="form-control floating" name="utilisateur[login]">
-                           <label class="focus-label"> Login</label>
+                           <label class="focus-label"> Nom d'utilisateur</label>
+                        </div>
+                         <div class="form-group form-focus">
+                           <input type="text" class="form-control floating" name="utilisateur[nom]" required>
+                           <label class="focus-label">Nom</label>
                         </div>
                         <div class="form-group form-focus">
                            <input type="email" class="form-control floating" name="utilisateur[email]">
@@ -54,17 +58,14 @@
                         </div>
                         <div class="form-group form-focus">
                            <input type="tel" class="form-control floating" name="utilisateur[tel]">
-                           <label class="focus-label"> TELEPHONE</label>
+                           <label class="focus-label"> Numéro de téléphone</label>
                         </div>
                         
                         <div class="form-group form-focus">
                            <input type="password" name="utilisateur[password]" class="form-control floating" required>
-                           <label class="focus-label">Enter Password</label>
+                           <label class="focus-label">Mot de passe</label>
                         </div>
-                        <div class="form-group form-focus">
-                           <input type="text" class="form-control floating" name="utilisateur[nom]" required>
-                           <label class="focus-label">Nom</label>
-                        </div>
+                       
                        <!-- <div class="form-group form-focus">
                            <input type="password" class="form-control floating">
                            <label class="focus-label">Enter Password</label>
@@ -73,7 +74,7 @@
                            <input type="password" class="form-control floating">
                            <label class="focus-label">Confirm Password</label>
                         </div>-->
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                            <div class="row">
                               <div class="col-12">
                                  <label class="custom_check mr-2 mb-0" > I agree to the <a href="#" class="text-primary"> terms of service</a> and <a href="#" class="text-primary">privacy policy</a>
@@ -82,12 +83,12 @@
                                  </label>
                               </div>
                            </div>
-                        </div>
+                        </div> -->
                         <div class="d-grid">
-                           <button class="btn btn-primary" type="submit">Register</button>
+                           <button class="btn btn-primary" type="submit">S'inscire</button>
                         </div>
-                        <div class="dont-have">Already have an account? <a href="/login">Login</a></div>
-                        <div class="login-or">
+                        <div class="dont-have">Vous avez déjà un compte? <a href="/login">Se connecter</a></div>
+                        <!-- <div class="login-or">
                            <span class="or-line"></span>
                            <p class="span-or">or login with </p>
                         </div>
@@ -95,7 +96,7 @@
                            <a href="#"><img src="/back/img/icon/google.png" class="img-fluid" alt="Logo"></a>
                            <a href="#"><img src="/back/img/icon/facebook.png" class="img-fluid" alt="Logo"></a>
                            <a href="#"><img src="/back/img/icon/twitter.png" class="img-fluid" alt="Logo"></a>
-                        </div>
+                        </div> -->
                      </form>
                   </div>
                </div>
