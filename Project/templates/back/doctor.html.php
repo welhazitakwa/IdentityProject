@@ -5,7 +5,7 @@
                <div class="page-header">
                   <div class="row align-items-center">
                      <div class="col-md-12 d-flex justify-content-end">
-                        <div class="doc-badge me-3">Nombre des docteurs <span class="ms-1"> <?=$count;?> </span></div>
+                        <div class="doc-badge me-3">Nombre des docteurs <span class="ms-1"> 1 </span></div>
                         <!--<a href="/doctor/edit?idspc=<?= $_GET['idspc'];?>"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouveau</a>-->
                      </div>
                   </div>
@@ -59,10 +59,11 @@
                               <table class="datatable table table-borderless hover-table" id="data-table">
                                  <thead class="thead-light">
                                     <tr>  
-                                          <th>ID</th>
-                                          <th>Nom</th>
-                                          <th>Prenom</th>
-                                          <th>Experience</th>
+                                          <th>Nom médecin</th>
+                                          <th>Matricule fiscale</th>
+                                          <th>Registre Commercial</th>
+                                          
+                                          
                                           <th width="100">Action</th> 
                                           
                                     </tr>
@@ -74,10 +75,18 @@
                                                if($utilisateur->id==$doctor->iduser):
                                       ?>
                                     <tr>
-                                          <td><?=$doctor->id?></td>
-                                          <td><?=$utilisateur->nom?></td>
-                                          <td><?=$utilisateur->prenom?></td>
-                                          <td><?=$doctor->experience?></td>
+                                           <td>
+                                           
+                                          <h2 class="table-avatar">
+                <a class="avatar-pos" href="#" data-bs-target="#doctorlist" data-bs-toggle="modal">
+                 <img class="avatar avatar-img" src="<?=$utilisateur->avatar?>" alt="Image non disponible"></a>
+                <a href="#" data-bs-target="#doctorlist" data-bs-toggle="modal" class="user-name">Dr. <?=$utilisateur->nom?> <?=$utilisateur->prenom?></a>
+                </h2>
+                                          
+                                          </td>
+                                          <td><?=$doctor->MF?></td>
+                                          <td><?=$doctor->RC?></td>
+                                          
                                           <td> 
 
 

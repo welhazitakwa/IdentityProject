@@ -81,8 +81,8 @@
                                            
                                           <h2 class="table-avatar">
                 <a class="avatar-pos" href="#" data-bs-target="#doctorlist" data-bs-toggle="modal">
-                 <img class="avatar avatar-img" src="/img_utilisateurs/<?=$utilisateur->avatar?>" alt="Image non disponible"></a>
-                <a href="#" data-bs-target="#doctorlist" data-bs-toggle="modal" class="user-name">Dr. <?=$utilisateur->nom?></a>
+                 <img class="avatar avatar-img" src="<?=$utilisateur->avatar?>" alt="Image non disponible"></a>
+                <a href="#" data-bs-target="#doctorlist" data-bs-toggle="modal" class="user-name">Dr. <?=$utilisateur->nom?>  <?=$utilisateur->prenom?></a>
                 </h2>
                                           
                                           </td>
@@ -102,8 +102,8 @@
                                          </td>
                                          
                                           <td><span class="user-name">
-                                          <?php $var = $utilisateur->date_ins;
-                                        echo date("d F Y", strtotime($var) ); ?>
+                                          <?php $var = $utilisateur->createdAt;
+                                        echo date("d/m/Y", strtotime($var) ); ?>
                                           <!-- </span><span class="d-block"><?=$utilisateur->date_ins ?></span></td>-->
                                           <td> 
 

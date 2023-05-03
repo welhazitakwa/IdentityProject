@@ -20,35 +20,7 @@
                                  <div class="form-custom me-2">
                                     <div id="tableSearch" class="dataTables_wrapper" ></div>
                                  </div>
-                                 <!-- <div class="SortBy">
-                                    <div class="selectBoxes order-by">
-                                       <p class="mb-0"><img src="/back/img/icon/sort.png" class="me-2" alt="icon"> Filter par </p>
-                                       <span class="down-icon"><i class="feather-chevron-down"></i></span>
-                                    </div>
-                                    <div id="checkBox">
-                                       <form action="https://doccure.dreamguystech.com/html/template/admin/specialities.html">
-                                          <p class="lab-title">Order By </p>
-                                          <label class="custom_radio w-100">
-                                          <input type="radio" name="order">
-                                          <span class="checkmark"></span> ID
-                                          </label>
-                                          <label class="custom_radio w-100 mb-4">
-                                          <input type="radio" name="order">
-                                          <span class="checkmark"></span> Date Modified
-                                          </label>
-                                          <p class="lab-title">Sort By</p>
-                                          <label class="custom_radio w-100">
-                                          <input type="radio" name="sort">
-                                          <span class="checkmark"></span> Ascending
-                                          </label>
-                                          <label class="custom_radio w-100 mb-4">
-                                          <input type="radio" name="sort">
-                                          <span class="checkmark"></span> Descending
-                                          </label>
-                                          <button type="submit" class="btn w-100 btn-primary">Apply</button>
-                                       </form>
-                                    </div>
-                                 </div> -->
+                             
                               </div>
                            </div>
                         </div>
@@ -78,7 +50,7 @@
 <td>
                                           <h2 class="table-avatar">
                 <a class="avatar-pos" href="#" data-bs-target="#doctorlist" data-bs-toggle="modal">
-                 <img class="avatar avatar-img" src="/img_utilisateurs/<?=$utilisateur->avatar?>" alt="Image non disponible"></a>
+                 <img class="avatar avatar-img" src="<?=$utilisateur->avatar?>" alt="Image non disponible"></a>
                 <a href="#" data-bs-target="#appointmentlist" data-bs-toggle="modal" class="user-name"><?=$utilisateur->nom?> <?=$utilisateur->prenom?></span> <span class="text-muted"><?=$utilisateur->genre?>, <?php
 
             $dateNaissance = $utilisateur->dateNaissance ;
@@ -94,7 +66,7 @@
                                            
                                           <h2 class="table-avatar">
                 <a class="avatar-pos" href="#" data-bs-target="#doctorlist" data-bs-toggle="modal">
-                 <img class="avatar avatar-img" src="/img_utilisateurs/<?=$util->avatar?>" alt="Image non disponible"></a>
+                 <img class="avatar avatar-img" src="<?=$util->avatar?>" alt="Image non disponible"></a>
                 <a href="#" data-bs-target="#doctorlist" data-bs-toggle="modal" class="user-name">Dr. <?=$util->nom?></a>
                 </h2>
                                           
