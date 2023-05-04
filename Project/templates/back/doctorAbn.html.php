@@ -77,7 +77,7 @@
                                            
                                           <h2 class="table-avatar">
                 <a class="avatar-pos" href="#" data-bs-target="#doctorlist" data-bs-toggle="modal">
-                 <img class="avatar avatar-img" src="/img_utilisateurs/<?=$utilisateur->avatar?>" alt="Image non disponible"></a>
+                 <img class="avatar avatar-img" src="<?=$utilisateur->avatar?>" alt="Image non disponible"></a>
                 <a href="#" data-bs-target="#doctorlist" data-bs-toggle="modal" class="user-name">Dr. <?=$utilisateur->nom?></a>
                 </h2>
                                           
