@@ -37,7 +37,7 @@ class mapRoutes implements \AIFrame\Routes {
 
 	public function getRoutes(): array {
 		
-		$utilisateurController = new \App\Controllers\Register($this->utilisateursTable,$this->authentication);
+		$utilisateurController = new \App\Controllers\Register($this->utilisateursTable,$this->authentication, 	$this->doctorsTable, $this->patientsTable, $this->appointmentsTable, $this->specialitesTable);
 		$loginController = new \App\Controllers\Login($this->authentication);
 	
 //////////////////////////////////////////////////////////Control instance  # ETAPE 3 

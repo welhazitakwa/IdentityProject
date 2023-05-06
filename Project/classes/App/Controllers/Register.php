@@ -6,17 +6,34 @@ use \AIFrame\Authentication;
 class Register {
 	private $utilisateursTable;	
 	private $authentication;
+	private $doctorsTable;
+	private $patientsTable;
+	private $appointmentsTable;
+	private $specialitesTable;
 
 
-	public function __construct(DatabaseTable $utilisateursTable, \AIFrame\Authentication $authentication) {
+	public function __construct(\AIFrame\DatabaseTable $utilisateursTable, \AIFrame\Authentication $authentication, \AIFrame\DatabaseTable $doctorsTable, \AIFrame\DatabaseTable $patientsTable, \AIFrame\DatabaseTable $appointmentsTable,\AIFrame\DatabaseTable $specialitesTable) {
 		$this->utilisateursTable = $utilisateursTable;
 		$this->authentication = $authentication;
-
+		$this->doctorsTable = $doctorsTable;
+		$this->patientsTable = $patientsTable;
+		$this->appointmentsTable = $appointmentsTable;
+		$this->specialitesTable = $specialitesTable;
 	}
 	public function home() {
+		$utilisateurs = $this->utilisateursTable->total();
+		$doctors = $this->doctorsTable->total();
+		$patients = $this->patientsTable->total();
+		$appointments = $this->appointmentsTable->total();
+		$specialites = $this->specialitesTable->total();
 		$title = 'Bienvenue dans notre monde';
 		return ['template' => 'board.html.php', 
-		'title' => $title,'variables' => []];
+		'title' => $title,'variables' => [
+					'utilisateurs' => $utilisateurs,
+					'doctors' => $doctors,
+					'patients' => $patients,
+					'appointments' => $appointments,
+					'specialites' => $specialites]];
 	}
 
 	public function getSession(){

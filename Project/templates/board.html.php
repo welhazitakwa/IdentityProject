@@ -10,13 +10,13 @@
                               <i class="feather-user-plus"></i>
                               </span>
                               <div class="dash-count">
-                                 <h5 class="dash-title">Doctors</h5>
+                                 <h5 class="dash-title">Médecins</h5>
                                  <div class="dash-counts">
-                                    <p>4505</p>
+                                    <p><?=$doctors;?></p>
                                  </div>
                               </div>
                            </div>
-                           <p class="trade-level mb-0"><span class="text-danger me-1"><i class="fas fa-caret-down me-1"></i>1.15%</span> last week</p>
+                           <!-- <p class="trade-level mb-0"><span class="text-danger me-1"><i class="fas fa-caret-down me-1"></i>1.15%</span> last week</p> -->
                         </div>
                      </div>
                   </div>
@@ -30,11 +30,11 @@
                               <div class="dash-count">
                                  <h5 class="dash-title">Patients</h5>
                                  <div class="dash-counts">
-                                    <p>2000</p>
+                                    <p><?=$patients;?></p>
                                  </div>
                               </div>
                            </div>
-                           <p class="trade-level mb-0"><span class="text-success me-1"><i class="fas fa-caret-up me-1"></i>4.5%</span> last week</p>
+                           <!-- <p class="trade-level mb-0"><span class="text-success me-1"><i class="fas fa-caret-up me-1"></i>4.5%</span> last week</p> -->
                         </div>
                      </div>
                   </div>
@@ -46,13 +46,13 @@
                               <img src="/back/img/icon/calendar.png" alt="User Image">
                               </span>
                               <div class="dash-count">
-                                 <h5 class="dash-title">Appointment</h5>
+                                 <h5 class="dash-title">Rendez-vous</h5>
                                  <div class="dash-counts">
-                                    <p>4500</p>
+                                    <p><?=$appointments;?></p>
                                  </div>
                               </div>
                            </div>
-                           <p class="trade-level mb-0"><span class="text-success me-1"><i class="fas fa-caret-up me-1"></i>9.65%</span> last week</p>
+                           <!-- <p class="trade-level mb-0"><span class="text-success me-1"><i class="fas fa-caret-up me-1"></i>9.65%</span> last week</p> -->
                         </div>
                      </div>
                   </div>
@@ -64,18 +64,18 @@
                               <img src="/back/img/icon/chart.png" alt="User Image">
                               </span>
                               <div class="dash-count">
-                                 <h5 class="dash-title">Revenue</h5>
+                                 <h5 class="dash-title">Specialités</h5>
                                  <div class="dash-counts">
-                                    <p>$62523</p>
+                                    <p><?=$specialites;?></p>
                                  </div>
                               </div>
                            </div>
-                           <p class="trade-level mb-0"><span class="text-danger me-1"><i class="fas fa-caret-up me-1"></i>40.5%</span> last week</p>
+                           <!-- <p class="trade-level mb-0"><span class="text-danger me-1"><i class="fas fa-caret-up me-1"></i>40.5%</span> last week</p> -->
                         </div>
                      </div>
                   </div>
                </div>
-               <div class="row">
+               <!-- <div class="row">
                   <div class="col-xl-7 d-flex">
                      <div class="card flex-fill">
                         <div class="card-header">
@@ -328,7 +328,7 @@
                         </div>
                      </div>
                   </div>
-               </div>
+               </div> -->
                <div class="row">
                   <div class="col-lg-8">
                      <div class="card">
@@ -632,13 +632,13 @@
                   </div>
                   <div class="col-xl-4 col-md-6">
                      <div class="row">
-                        <div class="col-md-6 pe-md-0">
+                        <!-- <div class="col-md-6 pe-md-0">
                            <div class="card cons-card mb-3">
                               <h6>Consultaion Today</h6>
                               <div id="income-month"></div>
                            </div>
-                        </div>
-                        <div class="col-md-6">
+                        </div> -->
+                        <!-- <div class="col-md-6">
                            <div class="card pat-card mb-1">
                               <div class="card-body">
                                  <p>New Patients</p>
@@ -653,8 +653,8 @@
                                  <p class="trade-level mb-0"><span class="text-success me-1"><i class="fas fa-caret-up me-1"></i>9.5%</span> last week</p>
                               </div>
                            </div>
-                        </div>
-                        <div class="col-md-12">
+                        </div> -->
+                        <!-- <div class="col-md-12">
                            <div class="card">
                               <div class="card-header">
                                  <div class="row align-items-center">
@@ -685,10 +685,10 @@
                                  </div>
                               </div>
                            </div>
-                        </div>
+                        </div> -->
                      </div>
                   </div>
-                  <div class="col-xl-4">
+                  <!-- <div class="col-xl-4">
                      <div class="card">
                         <div class="card-header">
                            <div class="row">
@@ -1828,10 +1828,10 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  </div> -->
                </div>
                <div class="row">
-                  <div class="col-xl-4 col-md-6">
+                  <!-- <div class="col-xl-4 col-md-6">
                      <div class="card recent-card">
                         <div class="card-header">
                            <div class="row">
@@ -1921,8 +1921,8 @@
                            </div>
                         </div>
                      </div>
-                  </div>
-                  <div class="col-xl-4 col-md-6">
+                  </div> -->
+                  <!-- <div class="col-xl-4 col-md-6">
                      <div class="card">
                         <div class="card-header">
                            <div class="row align-items-center">
@@ -2010,8 +2010,8 @@
                            </div>
                         </div>
                      </div>
-                  </div>
-                  <div class="col-xl-4">
+                  </div> -->
+                  <!-- <div class="col-xl-4">
                      <div class="row">
                         <div class="col-sm-6 d-flex">
                            <div class="spl-items flex-fill">
@@ -2062,7 +2062,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  </div> -->
                </div>
             </div>
          </div>
