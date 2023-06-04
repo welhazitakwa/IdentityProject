@@ -119,7 +119,7 @@
     <a href="/abonnement/edit?id=<?=$abonnement->id?>" class="text-dark">
     <i class="feather-edit-3"></i> Modifier &emsp;</a>
 
-    <a href="/abonnement/delete?id=<?=$abonnement->id?>" onClick="return(confirm('Voulez-vous sur supprimer cette abonnements?'))" class="text-danger"><i class="feather-trash-2 me-1"></i> Supprimer</a>
+    <a href="/abonnement/delete?id=<?=$abonnement->id?>" onClick="return(confirm('Voulez-vous supprimer cet abonnement?'))" class="text-danger"><i class="feather-trash-2 me-1"></i> Supprimer</a>
          </td>
 
   </div>

@@ -5,7 +5,10 @@
                <div class="page-header">
                   <div class="row align-items-center">
                      <div class="col-md-12 d-flex justify-content-end">
-                        <div class="doc-badge me-3">Nombre des docteurs <span class="ms-1"> <?=$count;?> </span></div>
+                        <div class="doc-badge me-3">&emsp; &emsp;       
+                            </div>
+                            <!-- <span class="ms-1">   <?=$count;?></span> -->
+                        
                         <!--<a href="/doctor/edit?idspc=<?= $_GET['idspc'];?>"  class="btn btn-primary btn-add"><i class="feather-plus-square me-1"></i> Ajouter nouveau</a>-->
                      </div>
                   </div>
@@ -22,35 +25,7 @@
                                  <div class="form-custom me-2">
                                     <div id="tableSearch" class="dataTables_wrapper" ></div>
                                  </div>
-                                 <div class="SortBy">
-                                    <div class="selectBoxes order-by">
-                                       <p class="mb-0"><img src="/back/img/icon/sort.png" class="me-2" alt="icon"> Filter par </p>
-                                       <span class="down-icon"><i class="feather-chevron-down"></i></span>
-                                    </div>
-                                    <div id="checkBox">
-                                       <form action="https://doccure.dreamguystech.com/html/template/admin/specialities.html">
-                                          <p class="lab-title">Order By </p>
-                                          <label class="custom_radio w-100">
-                                          <input type="radio" name="order">
-                                          <span class="checkmark"></span> ID
-                                          </label>
-                                          <label class="custom_radio w-100 mb-4">
-                                          <input type="radio" name="order">
-                                          <span class="checkmark"></span> Date Modified
-                                          </label>
-                                          <p class="lab-title">Sort By</p>
-                                          <label class="custom_radio w-100">
-                                          <input type="radio" name="sort">
-                                          <span class="checkmark"></span> Ascending
-                                          </label>
-                                          <label class="custom_radio w-100 mb-4">
-                                          <input type="radio" name="sort">
-                                          <span class="checkmark"></span> Descending
-                                          </label>
-                                          <button type="submit" class="btn w-100 btn-primary">Apply</button>
-                                       </form>
-                                    </div>
-                                 </div>
+                                 
                               </div>
                            </div>
                         </div>
@@ -86,9 +61,9 @@
                                        
 
                                          <td><span class="user-name">
-                                          <?php $var = $utilisateur->date_ins;
-                                        echo date("d F Y", strtotime($var) ); ?>
-                                          <!-- </span><span class="d-block"><?=$utilisateur->date_ins ?></span></td>-->
+                                          <?php $var = $utilisateur->createdAt;
+                                        echo date("d/m/Y", strtotime($var) ); ?>
+                                          <!-- </span><span class="d-block"><?=$utilisateur->date_ins ?></span>--></td>
                                            
 
                                           <!--<td><?=$doctor->id?></td>

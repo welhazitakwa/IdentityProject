@@ -1,10 +1,12 @@
 <div class="page-wrapper">
             <div class="content container-fluid pb-0">
-               <h4 class="mb-3">Overview</h4>
+               <h3 class="mb-3"> Vue d'ensemble </h3>
                <div class="row">
                   <div class="col-xl-3 col-sm-6 col-12">
+                  
                      <div class="card">
                         <div class="card-body">
+                           
                            <div class="dash-widget-header">
                               <span class="dash-widget-icon bg-primary">
                               <i class="feather-user-plus"></i>
@@ -510,7 +512,7 @@
                   </div>
                </div>
                <div class="row">
-                  <div class="col-xl-4 col-md-6">
+                  <!-- <div class="col-xl-4 col-md-6">
                      <div class="card">
                         <div class="card-header">
                            <div class="row align-items-center">
@@ -629,7 +631,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  </div> -->
                   <div class="col-xl-4 col-md-6">
                      <div class="row">
                         <!-- <div class="col-md-6 pe-md-0">

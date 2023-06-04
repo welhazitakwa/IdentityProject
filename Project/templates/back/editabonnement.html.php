@@ -30,7 +30,9 @@
 
                               <div class="col-md-3 mb-3" style="margin-right: 85px;">
                                  <label for="validationCustom04">Prix</label>
-                                 <input type="number" class="form-control" id="validationCustom04" name="abonnement[prix]" value="<?=$abonnement->prix ?? ''?>" placeholder="Enter prix" required>
+                                 <input type="number" class="form-control" 
+                                 oninput="this.value = !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
+                                 id="validationCustom04" name="abonnement[prix]" value="<?=$abonnement->prix ?? ''?>" placeholder="Enter prix" required>
                                  <div class="invalid-feedback">
                                     Vous devez saisir le prix.
                                  </div>
@@ -39,7 +41,9 @@
 
                               <div class="col-md-3 mb-3">
                                  <label for="validationCustom04">Durée</label>
-                                 <input type="text" class="form-control" id="validationCustom04" name="abonnement[duree]" value="<?=$abonnement->duree ?? ''?>" placeholder="Enter Durée" required>
+                                 <input type="text" class="form-control" 
+                                 oninput="this.value = !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
+                                 id="validationCustom04" name="abonnement[duree]" value="<?=$abonnement->duree ?? ''?>" placeholder="Enter Durée" required>
                                  <div class="invalid-feedback">
                                     Vous devez saisir la durée.
                                  </div>

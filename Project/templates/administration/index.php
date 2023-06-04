@@ -28,8 +28,8 @@
                <a href="index.html" class="logo logo-small">
                <img src="/back/img/logo-small.png" alt="Logo" width="30" height="30">
                </a>
-               <a href="javascript:void(0);" id="toggle_btn">
-               <i class="feather-chevrons-left"></i>
+               <!-- <a href="javascript:void(0);" id="toggle_btn">
+               <i class="feather-chevrons-left"></i> -->
                </a>
             </div>
 
