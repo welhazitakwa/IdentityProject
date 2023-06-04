@@ -97,7 +97,7 @@
 
 
  
-                                                  <a href="/patient/delete?id=<?=$patient->id?>" onClick="return(confirm('Voulez-vous sur supprimer cette patients?'))" class="text-danger"><i class="feather-trash-2 me-1"></i>Supprimer</a>
+                                                  <a href="/patient/delete?id=<?=$patient->id?>" onClick="return(confirm('Voulez-vous supprimer ce patient?'))" class="text-danger"><i class="feather-trash-2 me-1"></i>Supprimer</a>
                                               </div>
                                           </td>
 

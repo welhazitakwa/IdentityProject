@@ -110,7 +110,7 @@
 
 
  
-                                                  <a href="/doctor/delete?id=<?=$doctor->id?>" onClick="return(confirm('Voulez-vous sur supprimer cette doctors?'))" class="text-danger"><i class="feather-trash-2 me-1"></i>Supprimer</a>
+                                                  <a href="/doctor/delete?id=<?=$doctor->id?>" onClick="return(confirm('Voulez-vous supprimer ce médecin?'))" class="text-danger"><i class="feather-trash-2 me-1"></i>Supprimer</a>
                                               </div>
                                           </td>
 
