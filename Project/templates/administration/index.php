@@ -84,7 +84,7 @@
                         <a href="/abonnement/list"><i class="feather-dollar-sign"></i> <span>Abonnements</span></a>
                      </li>
                      <li>
-                        <a href="/specialite/list"><i class="feather-package"></i> <span>Spécialités</span></a>
+                        <a href="/specialite/list"><i class="fas fa-plus-square"></i> <span>Spécialités</span></a>
                      </li>
                      <li>
 

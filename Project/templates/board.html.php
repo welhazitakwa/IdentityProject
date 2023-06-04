@@ -9,7 +9,7 @@
                            
                            <div class="dash-widget-header">
                               <span class="dash-widget-icon bg-primary">
-                              <i class="feather-user-plus"></i>
+                              <i class="fa fa-user-md"></i>
                               </span>
                               <div class="dash-count">
                                  <h5 class="dash-title">Médecins</h5>
@@ -62,8 +62,8 @@
                      <div class="card">
                         <div class="card-body">
                            <div class="dash-widget-header">
-                              <span class="dash-widget-icon bg-danger">
-                              <img src="/back/img/icon/chart.png" alt="User Image">
+                              <span class="dash-widget-icon bg-success">
+                              <i class="fa fa-plus-square" aria-hidden="true"></i>
                               </span>
                               <div class="dash-count">
                                  <h5 class="dash-title">Specialités</h5>
@@ -332,184 +332,151 @@
                   </div>
                </div> -->
                <div class="row">
-                  <div class="col-lg-8">
-                     <div class="card">
+                  
                         <div class="card-header border-bottom-0">
                            <div class="row align-items-center">
                               <div class="col">
-                                 <h5 class="card-title">Recent Patient Activity</h5>
+                                 <h5 class="card-title" style="margin-top : 10px"> Une perspective complète des fonctionnalités</h5>
                               </div>
                               <div class="col-auto d-flex">
                                  <div class="bookingrange btn btn-white btn-sm">
-                                    <div class="cal-ico">
-                                       <span>Select Date</span>
-                                       <i class="feather-chevron-down ms-1"></i>
-                                    </div>
+                                    
                                  </div>
                               </div>
                            </div>
                         </div>
-                        <div class="card-body p-0">
-                           <div class="table-responsive">
-                              <table class="table table-borderless hover-table">
-                                 <thead class="thead-light">
-                                    <tr>
-                                       <th>ID</th>
-                                       <th>Patient</th>
-                                       <th>Disease</th>
-                                       <th>Member since </th>
-                                       <th>Status</th>
-                                       <th class="text-right"></th>
-                                    </tr>
-                                 </thead>
-                                 <tbody>
-                                    <tr>
-                                       <td>#4546</td>
-                                       <td>
-                                          <h2 class="table-avatar">
-                                             <a href="profile.html"><img class="avatar avatar-img" src="/back/img/profiles/avatar-07.jpg" alt="User Image"></a>
-                                             <a href="#" class="user-name">Bess Twishes <span class="text-muted">Male, 40 Years Old</span></a>
-                                          </h2>
-                                       </td>
-                                       <td><span class="disease-name">Allergies & Asthma</span></td>
-                                       <td>
-                                          <span class="text-yellow user-name">New Patient</span>
-                                          <span class="d-block">23 Nov 2020</span>
-                                       </td>
-                                       <td><span class="badge bg-badge-grey text-success"><i class="fas fa-circle me-1"></i> Enabled</span></td>
-                                       <td class="text-right">
-                                          <i class="feather-chevron-right"></i>
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td>#8774</td>
-                                       <td>
-                                          <h2 class="table-avatar">
-                                             <a href="profile.html"><img class="avatar avatar-img" src="/back/img/profiles/avatar-04.jpg" alt="User Image"></a>
-                                             <a href="#" class="user-name">Bess Twishes <span class="text-muted">Female,30 Years Old</span></a>
-                                          </h2>
-                                       </td>
-                                       <td><span class="disease-name">Sleep Problem</span></td>
-                                       <td>
-                                          <span class="text-danger user-name">Old Patient</span>
-                                          <span class="d-block">23 Nov 2020</span>
-                                       </td>
-                                       <td><span class="badge bg-badge-grey text-danger"><i class="fas fa-circle me-1"></i> Disabled</span></td>
-                                       <td class="text-right">
-                                          <i class="feather-chevron-right"></i>
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td>#4546</td>
-                                       <td>
-                                          <h2 class="table-avatar">
-                                             <a href="profile.html"><img class="avatar avatar-img" src="/back/img/profiles/avatar-02.jpg" alt="User Image"></a>
-                                             <a href="#" class="user-name">Abdul Aziz Lazis <span class="text-muted">Male, 25 Years Old</span></a>
-                                          </h2>
-                                       </td>
-                                       <td><span class="disease-name">Tooth Pain</span></td>
-                                       <td>
-                                          <span class="text-danger user-name">Old Patient</span>
-                                          <span class="d-block">23 Nov 2020</span>
-                                       </td>
-                                       <td><span class="badge bg-badge-grey text-success"><i class="fas fa-circle me-1"></i> Enabled</span></td>
-                                       <td class="text-right">
-                                          <i class="feather-chevron-right"></i>
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                       <td>#4546</td>
-                                       <td>
-                                          <h2 class="table-avatar">
-                                             <a href="profile.html"><img class="avatar avatar-img" src="/back/img/profiles/avatar-05.jpg" alt="User Image"></a>
-                                             <a href="#" class="user-name">Alex Siauw <span class="text-muted">Male, 29 Years Old</span></a>
-                                          </h2>
-                                       </td>
-                                       <td><span class="disease-name">Pain on knee</span></td>
-                                       <td>
-                                          <span class="text-yellow user-name">New Patient</span>
-                                          <span class="d-block">23 Nov 2020</span>
-                                       </td>
-                                       <td><span class="badge bg-badge-grey text-success"><i class="fas fa-circle me-1"></i> Enabled</span></td>
-                                       <td class="text-right">
-                                          <i class="feather-chevron-right"></i>
-                                       </td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4">
-                     <div class="card">
-                        <div class="card-header">
-                           <div class="row">
-                              <div class="col">
-                                 <h5 class="card-title">Top Doctors</h5>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="card-body p-0">
-                           <div class="table-responsive">
-                              <table class="table doc-table">
-                                 <tbody>
-                                    <tr>
-                                       <td>
-                                          <h2 class="table-avatar">
-                                             <a class="avatar-pos avatar-online" href="profile.html"><img class="avatar avatar-img" src="/back/img/profiles/avatar-05.jpg" alt="User Image"></a>
-                                             <a href="#" class="user-name"><span class="text-muted">Dr. Rayan</span> <span class="tab-subtext">Gyanoclogist</span></a>
-                                          </h2>
-                                       </td>
-                                       <td><span class="table-rating"><i class="fas fa-star me-2"></i> 4.5</span></td>
-                                       <td class="text-right"><span class="text-muted">200 Patients</span></td>
-                                    </tr>
-                                    <tr>
-                                       <td>
-                                          <h2 class="table-avatar">
-                                             <a class="avatar-pos avatar-online" href="profile.html"><img class="avatar avatar-img" src="/back/img/profiles/avatar-10.jpg" alt="User Image"></a>
-                                             <a href="#" class="user-name"><span class="text-muted">Dr. Bea</span> <span class="tab-subtext">Dentist</span></a>
-                                          </h2>
-                                       </td>
-                                       <td><span class="table-rating"><i class="fas fa-star me-2"></i> 4.9</span></td>
-                                       <td class="text-right"><span class="text-muted">180 Patients</span></td>
-                                    </tr>
-                                    <tr>
-                                       <td>
-                                          <h2 class="table-avatar">
-                                             <a class="avatar-pos avatar-offline" href="profile.html"><img class="avatar avatar-img" src="/back/img/profiles/avatar-11.jpg" alt="User Image"></a>
-                                             <a href="#" class="user-name"><span class="text-muted">Dr. Monroe</span> <span class="tab-subtext">Hair Specialities</span></a>
-                                          </h2>
-                                       </td>
-                                       <td><span class="table-rating"><i class="fas fa-star me-2"></i> 4.8</span></td>
-                                       <td class="text-right"><span class="text-muted">160 Patients</span></td>
-                                    </tr>
-                                    <tr>
-                                       <td>
-                                          <h2 class="table-avatar">
-                                             <a class="avatar-pos avatar-offline" href="profile.html"><img class="avatar avatar-img" src="/back/img/profiles/avatar-13.jpg" alt="User Image"></a>
-                                             <a href="#" class="user-name"><span class="text-muted">Dr. Lester</span> <span class="tab-subtext">Orthopaedics</span></a>
-                                          </h2>
-                                       </td>
-                                       <td><span class="table-rating"><i class="fas fa-star me-2"></i> 4.7</span></td>
-                                       <td class="text-right"><span class="text-muted">140 Patients</span></td>
-                                    </tr>
-                                    <tr>
-                                       <td>
-                                          <h2 class="table-avatar">
-                                             <a class="empty-user" href="profile.html"><i class="feather-user"></i> </a>
-                                             <a href="#" class="user-name"><span class="text-muted">Dr. Clint</span> <span class="tab-subtext">Neurology</span></a>
-                                          </h2>
-                                       </td>
-                                       <td><span class="table-rating"><i class="fas fa-star me-2"></i> 4.6</span></td>
-                                       <td class="text-right"><span class="text-muted">120 Patients</span></td>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                       <section class="comp-section comp-cards">
+   <div class="section-header">
+      <h3 class="section-title"></h3>
+      <!-- <div class="line"></div> -->
+   </div>
+   
+   
+   <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+         <div class="card flex-fill">
+            <div class="card-header">
+               <h4>Gestion des abonnements</h4>
+            </div>
+            <div class="card-body">
+               <h5 class="card-title"></h5>
+               <p class="card-text">Cette fonctionnalité vous permet d'ajouter, de consulter, de modifier, de supprimer et de rechercher différents types d'abonnements. Cela vous offre un contrôle complet sur la gestion des d'abonnement proposés aux utilisateurs de votre site web.</p>
+            </div>
+            
+         </div>
+      </div>
+
+
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+         <div class="card flex-fill">
+            <div class="card-header">
+               <h4>Gestion des spécialités</h4>
+            </div>
+            <div class="card-body">
+               <h5 class="card-title"></h5>
+               <p class="card-text">Cette fonctionnalité vous permet d'ajouter, de consulter, de modifier, de supprimer et de rechercher des spécialités. Elle vous offre la possibilité de gérer efficacement la liste des spécialités médicales disponibles sur votre site web, en permettant aux patients de trouver les professionnels de la santé appropriés en fonction de leurs besoins spécifiques.</p>
+            </div>
+            
+         </div>
+      </div>
+
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex">
+         <div class="card flex-fill">
+            <div class="card-header">
+               <h4>Controle d'accés</h4>
+            </div>
+            <div class="card-body">
+               <h5 class="card-title"></h5>
+               <p class="card-text"> Cette fonctionnalité vous permet de consulter, supprimer, bloquer et débloquer les comptes des utilisateurs. Cela garantit une gestion efficace des comptes et maintient l'intégrité de la base de données.</p>
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      
+   </div>
+</section>
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     
+                  
                </div>
                <div class="row">
                   <!-- <div class="col-xl-4 col-md-6">

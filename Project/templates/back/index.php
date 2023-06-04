@@ -35,24 +35,15 @@
    
     <div class="main-wrapper">
         
-            <div class="header">
-            <div class="header-left">
-               <a href="/" class="logo">
-               <img src="/back/img/logo.png" alt="Logo">
-               </a>
-               <a href="index.html" class="logo logo-small">
-               <img src="/back/img/logo-small.png" alt="Logo" width="30" height="30">
-               </a>
-               <a href="javascript:void(0);" id="toggle_btn">
-               <i class="feather-chevrons-left"></i>
-               </a>
-            </div>
+            <div class="error-box" style="margin-top:6%">
+<img src="/back/img/404.png" class="img-fluid" alt="404">
+<h2>Oops! vous n'êtes pas un administrateur</h3>
+<p>Vérifiez vos données s'il vous plaît !</p>
+<a href="logout" class="btn btn-primary"><i class="feather-home me-2"></i>Vérifier</a>
+</div>
 
-           
-           
-         </div>
-         
-         <h1 style="margin-top :23% ; margin-left : 33% ; color:#004F92">Vous n'êtes pas autorisé </h1>
+         <!-- <h1 style="margin-top :23% ; margin-left : 33% ; color:#004F92">Vous n'êtes pas autorisé </h1>
+         <img src="/back/img/404.png" alt="Logo"> -->
          
 </div>
     <!-- End Containerbar -->
