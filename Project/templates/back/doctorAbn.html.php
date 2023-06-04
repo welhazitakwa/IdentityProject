@@ -86,9 +86,9 @@
                                        
 
                                          <td><span class="user-name">
-                                          <?php $var = $utilisateur->date_ins;
-                                        echo date("d F Y", strtotime($var) ); ?>
-                                          <!-- </span><span class="d-block"><?=$utilisateur->date_ins ?></span></td>-->
+                                          <?php $var = $utilisateur->createdAt;
+                                        echo date("d/m/Y", strtotime($var) ); ?>
+                                          <!-- </span><span class="d-block"><?=$utilisateur->date_ins ?></span>--></td>
                                            
 
                                           <!--<td><?=$doctor->id?></td>
