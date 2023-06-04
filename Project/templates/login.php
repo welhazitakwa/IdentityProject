@@ -32,7 +32,7 @@
                      <div class="img-logo">
                         <img src="/back/img/logo.png" class="img-fluid" alt="Logo">
                      </div>
-                     <h3>Login</h3>
+                     <h3>Se connecter</h3>
                      <p class="account-subtitle"><?php
 if(isset ($_POST['ok'])) :
    if ($loggedIn):
@@ -50,7 +50,7 @@ if(isset ($_POST['ok'])) :
                      <form action="/login" method='post'>
                         <div class="form-group form-focus">
                            <input type="text" id='login' name='login' class="form-control floating" >
-                           <label class="focus-label">Entrer votre login</label>
+                           <label class="focus-label">Entrer votre Nom d'utilisateur</label>
                         </div>
                         <div class="form-group form-focus">
                            <input type="password" id='password' name='password' class="form-control floating" >
@@ -71,11 +71,11 @@ if(isset ($_POST['ok'])) :
                            </div>
                         </div>
                         <div class="d-grid">
-                           <button class="btn btn-primary" type="submit" name="ok">Login </button>
+                           <button class="btn btn-primary" type="submit" name="ok">Se connecter </button>
 
 
                         </div>
-                        <div class="dont-have">Don't have an account? <a href="/register">Sign up</a></div>
+                        <div class="dont-have">Vous n'avez pas un compte ? <a href="/register">S'inscrire</a></div>
                         <div class="login-or">
                            <span class="or-line"></span>
                            
